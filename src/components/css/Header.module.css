@@ -1,0 +1,139 @@
+.headerChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-mistyrose);
+}
+.barbier,
+.coiffeur,
+.institutDeBeaut,
+.institutDeMassage,
+.nosServices {
+  position: absolute;
+  height: 96.06%;
+  width: 22.86%;
+  top: 3.94%;
+  display: inline-block;
+}
+.nosServices {
+  left: 25.48%;
+  cursor: pointer;
+}
+.barbier,
+.coiffeur,
+.institutDeBeaut,
+.institutDeMassage {
+  left: 8.73%;
+}
+.coiffeur,
+.institutDeBeaut,
+.institutDeMassage {
+  width: 12.57%;
+  left: 0;
+}
+.institutDeBeaut,
+.institutDeMassage {
+  width: 24.61%;
+  left: 48.88%;
+}
+.institutDeMassage {
+  top: 0;
+  left: 75.39%;
+}
+.menu {
+  position: absolute;
+  height: 31%;
+  width: 40.15%;
+  top: 46.44%;
+  right: 42.05%;
+  bottom: 22.56%;
+  left: 17.8%;
+  text-align: center;
+  color: var(--color-black);
+}
+.shinyLogo {
+  position: absolute;
+  height: 47.67%;
+  width: 8.27%;
+  top: 22.22%;
+  left: 3.19%;
+  font-size: var(--font-size-21xl);
+  font-weight: 800;
+  font-family: var(--font-inter);
+  color: var(--color-lightcoral-200);
+  display: inline-block;
+}
+.boutonConnexionChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-21xl);
+  background-color: var(--color-pink);
+}
+.connexion {
+  position: absolute;
+  height: 37.76%;
+  width: 44.18%;
+  top: 33.4%;
+  left: 31.39%;
+  display: inline-block;
+}
+.materialSymbolspersonIcon {
+  position: absolute;
+  height: 62.24%;
+  width: 16.3%;
+  top: 17.84%;
+  right: 77.3%;
+  bottom: 19.92%;
+  left: 6.39%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.boutonConnexion {
+  position: absolute;
+  height: 53.56%;
+  width: 12.06%;
+  top: 22.67%;
+  right: 1.54%;
+  bottom: 23.78%;
+  left: 86.4%;
+  cursor: pointer;
+}
+.ajouterVotreTablissement {
+  position: absolute;
+  height: 37.76%;
+  width: 79.51%;
+  top: 33.4%;
+  left: 10.03%;
+  display: inline-block;
+}
+.boutonAjouterTablissement {
+  position: absolute;
+  height: 53.56%;
+  width: 17.45%;
+  top: 22.67%;
+  right: 15.28%;
+  bottom: 23.78%;
+  left: 67.27%;
+  cursor: pointer;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 90px;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--font);
+  font-family: var(--font-arial);
+}

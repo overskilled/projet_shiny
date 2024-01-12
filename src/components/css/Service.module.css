@@ -1,0 +1,209 @@
+.cadreIcon,
+.illustrationIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  width: 817px;
+  height: 421px;
+}
+.illustrationIcon {
+  top: 17px;
+  left: 14.7px;
+  width: 299.6px;
+  height: 279px;
+  object-fit: cover;
+}
+.dateAprem,
+.dateMidi,
+.info,
+.titreService {
+  position: absolute;
+  top: 17px;
+  left: 318px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 210.5px;
+  height: 43px;
+}
+.dateAprem,
+.dateMidi,
+.info {
+  top: 361px;
+  left: 25px;
+}
+.dateAprem,
+.dateMidi {
+  top: 184px;
+  left: 329px;
+  width: 97px;
+}
+.dateAprem {
+  top: 227px;
+  left: 340px;
+  width: 122px;
+}
+.barreDeRecherche {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-pink);
+  width: 247.8px;
+  height: 42.3px;
+}
+.prendreRdv {
+  position: absolute;
+  top: 9px;
+  left: 50px;
+  display: inline-block;
+  width: 173px;
+  height: 24px;
+}
+.boutonSelect {
+  position: absolute;
+  top: 361px;
+  left: 556px;
+  width: 247.8px;
+  height: 42.3px;
+  cursor: pointer;
+  text-align: left;
+  color: var(--color-gray-200);
+}
+.barreDeRecherche1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-lightgray-100);
+  width: 83.3px;
+  height: 42.3px;
+}
+.lun {
+  position: absolute;
+  top: 9px;
+  left: 16.7px;
+  display: inline-block;
+  width: 49.8px;
+  height: 23.7px;
+}
+.barreDeRecherche3,
+.day,
+.day1 {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 83.3px;
+  height: 42.3px;
+}
+.barreDeRecherche3,
+.day1 {
+  top: 52px;
+  left: 192px;
+}
+.barreDeRecherche3 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-pink);
+}
+.day2,
+.day3,
+.day4,
+.day5,
+.emploieDuTemps {
+  position: absolute;
+  top: 51px;
+  left: 94px;
+  width: 83.3px;
+  height: 42.3px;
+}
+.day3,
+.day4,
+.day5,
+.emploieDuTemps {
+  top: 0;
+}
+.day4,
+.day5,
+.emploieDuTemps {
+  left: 192px;
+}
+.day5,
+.emploieDuTemps {
+  left: 0;
+}
+.emploieDuTemps {
+  top: 176px;
+  left: 488px;
+  width: 275.3px;
+  height: 94.3px;
+  text-align: left;
+  color: var(--color-lavenderblush);
+}
+.localisation {
+  position: absolute;
+  top: 0;
+  left: 24.8px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 73.5px;
+  height: 30px;
+}
+.locationIcon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15.6px;
+  height: 23px;
+  object-fit: cover;
+}
+.location {
+  position: absolute;
+  top: 98px;
+  left: 340px;
+  width: 98.3px;
+  height: 30px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray);
+}
+.avis1 {
+  position: absolute;
+  top: 5px;
+  left: 21.1px;
+  display: inline-block;
+  width: 105.7px;
+  height: 17px;
+}
+.avis,
+.services,
+.starIcon {
+  position: absolute;
+  height: 24px;
+}
+.starIcon {
+  top: 0;
+  left: 0;
+  width: 15.6px;
+  object-fit: cover;
+}
+.avis,
+.services {
+  top: 60px;
+  left: 340px;
+  width: 126.8px;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-darkslategray);
+}
+.services {
+  top: 438px;
+  left: 28px;
+  width: 817px;
+  height: 421px;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--font1);
+  font-family: var(--font-arial);
+}

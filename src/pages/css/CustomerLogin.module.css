@@ -1,0 +1,219 @@
+.desktop10Child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 601px;
+  height: 1060px;
+}
+.shiny {
+  color: var(--color-lightcoral-100);
+}
+.vousAvezDjContainer {
+  position: absolute;
+  top: 110px;
+  left: 743px;
+  font-size: var(--font-size-21xl);
+  display: inline-block;
+  width: 587px;
+  height: 34px;
+}
+.email {
+  position: absolute;
+  top: 220px;
+  left: 704px;
+}
+.desktop10Item {
+  position: absolute;
+  top: 266px;
+  right: 87.5px;
+  border-radius: var(--br-xs);
+  width: 649px;
+  height: 57px;
+  mix-blend-mode: linear-burn;
+}
+.motDePasse {
+  position: absolute;
+  top: 364px;
+  left: 704px;
+}
+.desktop10Inner {
+  position: absolute;
+  top: 418px;
+  right: 87px;
+  border-radius: var(--br-xs);
+  background-color: #f3eeee;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 649px;
+  height: 57px;
+  mix-blend-mode: linear-burn;
+}
+.motDePasse1 {
+  position: absolute;
+  top: 489px;
+  left: 704px;
+  opacity: 0.7;
+}
+.rectangleDiv {
+  position: absolute;
+  top: 569px;
+  left: 701px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-lightcoral-200);
+  width: 643px;
+  height: 65px;
+}
+.seConnecter {
+  position: absolute;
+  top: 584px;
+  left: 934px;
+  font-size: var(--font-size-13xl);
+  color: var(--font);
+}
+.lineIcon {
+  position: absolute;
+  top: 687px;
+  left: 710px;
+  width: 263px;
+  height: 2px;
+  object-fit: contain;
+}
+.lineDiv {
+  position: absolute;
+  top: 687.5px;
+  left: 1039.5px;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 314px;
+  height: 1px;
+}
+.groupChild,
+.ou {
+  position: absolute;
+  top: 674px;
+  left: 990px;
+}
+.groupChild {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: var(--font);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 643px;
+  height: 65px;
+}
+.seConnecterAvec {
+  position: absolute;
+  top: 19px;
+  left: 212px;
+}
+.flatColorIconsgoogle {
+  position: absolute;
+  top: 16px;
+  left: 153px;
+  width: 37px;
+  height: 33px;
+  overflow: hidden;
+}
+.groupDiv,
+.rectangleParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 643px;
+  height: 65px;
+}
+.groupDiv {
+  top: 769px;
+  left: 701px;
+}
+.seConnecterAvec1 {
+  position: absolute;
+  top: 21px;
+  left: 212px;
+}
+.mingcuteappleFillIcon {
+  position: absolute;
+  top: 16px;
+  left: 151px;
+  width: 37px;
+  height: 33px;
+  overflow: hidden;
+}
+.desktop10Inner1,
+.pathIcon,
+.rectangleContainer {
+  position: absolute;
+  top: 848px;
+  left: 701px;
+  width: 643px;
+  height: 65px;
+}
+.pathIcon,
+.rectangleContainer {
+  top: 926px;
+}
+.pathIcon {
+  top: 815px;
+  left: -96px;
+  width: 265px;
+  height: 310px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.desktop10Child1 {
+  position: absolute;
+  top: 184px;
+  left: 51px;
+  width: 521px;
+  height: 631px;
+}
+.vector,
+.vectorIcon {
+  position: absolute;
+  top: -139px;
+  left: 337px;
+  width: 264px;
+  height: 313px;
+}
+.vectorIcon {
+  height: 29.53%;
+  width: 18.33%;
+  top: 10.38%;
+  right: 58.26%;
+  bottom: 60.09%;
+  left: 23.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+}
+.crerUnCompte {
+  position: absolute;
+  top: 710px;
+  left: 898px;
+  font-size: var(--font-size-13xl);
+  opacity: 0.8;
+  mix-blend-mode: hard-light;
+}
+.custpmerLogin,
+.desktop10 {
+  height: 1060px;
+  overflow: hidden;
+}
+.desktop10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--font);
+  width: 1440px;
+}
+.custpmerLogin {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-arial);
+}

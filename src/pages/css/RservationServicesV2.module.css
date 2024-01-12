@@ -1,0 +1,59 @@
+.nosServices {
+  position: absolute;
+  top: 113px;
+  left: 519px;
+  font-size: var(--font-size-45xl);
+  font-family: var(--font-arial);
+  color: var(--color-black);
+  text-align: left;
+}
+.veillezVotreBeaut {
+  margin: 0;
+}
+.filtre1,
+.veillezVotreBeautContainer {
+  position: absolute;
+  top: 196px;
+  left: 133px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 1174px;
+}
+.filtre1 {
+  top: 3px;
+  left: 17px;
+  width: 99px;
+}
+.funnelIcon,
+.sortDownIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+}
+.sortDownIcon {
+  top: 10px;
+  left: 100px;
+  width: 26px;
+  height: 26px;
+}
+.filtre {
+  position: absolute;
+  top: 376px;
+  left: 43px;
+  width: 126px;
+  height: 39px;
+}
+.rservationServicesV2 {
+  position: relative;
+  background-color: var(--font);
+  width: 100%;
+  height: 3454px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--font1);
+  font-family: var(--font-poppins);
+}

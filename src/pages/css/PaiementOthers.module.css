@@ -1,0 +1,40 @@
+.payment {
+  position: relative;
+  line-height: 32px;
+  cursor: pointer;
+}
+.chevronRight1Icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.others {
+  position: relative;
+  line-height: 32px;
+  color: var(--space-cadet);
+}
+.steps {
+  position: absolute;
+  top: 203px;
+  left: 54px;
+  width: 329px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.paiementOthers {
+  position: relative;
+  background-color: var(--font);
+  width: 100%;
+  height: 2084px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--cool-grey);
+  font-family: var(--font-arial);
+}

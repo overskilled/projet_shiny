@@ -1,0 +1,347 @@
+.cadre {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: var(--br-xl);
+  background-color: var(--font);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 490px;
+  height: 648px;
+}
+.localisation {
+  position: absolute;
+  top: 0;
+  left: 24.8px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 73.5px;
+  height: 30px;
+}
+.locationIcon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15.6px;
+  height: 23px;
+  object-fit: cover;
+}
+.location {
+  position: absolute;
+  top: 191px;
+  left: 24px;
+  width: 98.3px;
+  height: 30px;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray);
+}
+.avis1 {
+  position: absolute;
+  top: 6px;
+  left: 35px;
+  display: inline-block;
+  width: 120px;
+  height: 19px;
+}
+.avis,
+.starIcon {
+  position: absolute;
+  height: 27px;
+}
+.starIcon {
+  top: 0;
+  left: 0;
+  width: 29.4px;
+  object-fit: cover;
+}
+.avis {
+  top: 191px;
+  left: 142px;
+  width: 155px;
+  font-size: var(--font-size-mini);
+  color: var(--color-darkslategray);
+}
+.titreService {
+  position: absolute;
+  top: 156px;
+  left: 0;
+  font-size: var(--font-size-5xl);
+  line-height: 148.8%;
+  display: inline-block;
+  text-align: center;
+  width: 210.5px;
+  height: 43px;
+}
+.cadre1 {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: var(--br-xl);
+  background-color: var(--font);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 335px;
+  height: 98px;
+}
+.prestation,
+.tempsPrix,
+.tempsPrix1 {
+  position: absolute;
+  top: 15px;
+  left: 21px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 259px;
+  height: 41.3px;
+}
+.tempsPrix,
+.tempsPrix1 {
+  top: 50px;
+  left: 26px;
+  width: 87px;
+  height: 26.9px;
+}
+.tempsPrix1 {
+  left: 119px;
+  white-space: pre-wrap;
+  width: 138px;
+}
+.prestationSelectChild {
+  position: absolute;
+  top: 71px;
+  left: 113px;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  width: 7px;
+  height: 6.3px;
+}
+.prestationSelect {
+  position: absolute;
+  top: 313px;
+  left: 32px;
+  width: 333px;
+  height: 96px;
+  font-size: var(--font-size-5xl);
+}
+.cadre2 {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-radius: var(--br-xl);
+  background-color: var(--font);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 404px;
+  height: 56px;
+}
+.date,
+.heure {
+  position: absolute;
+  top: 8.3px;
+  left: 21px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 215px;
+  height: 22.9px;
+}
+.heure {
+  left: 259px;
+  color: var(--color-darkslategray);
+  width: 101px;
+}
+.dateEtHeureSelectChild {
+  position: absolute;
+  top: 23.2px;
+  left: 239.5px;
+  width: 7px;
+  height: 4.6px;
+}
+.dateEtHeureSelect {
+  position: absolute;
+  top: 522px;
+  left: 24px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  width: 402px;
+  height: 54px;
+  font-size: var(--font-size-5xl);
+}
+.infosDePaiementChild {
+  position: absolute;
+  top: 206px;
+  left: 130px;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  width: 7px;
+  height: 7px;
+}
+.titreService1,
+.titreService2,
+.titreService3,
+.titreService4 {
+  position: absolute;
+  top: 252px;
+  left: 26px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 339px;
+  height: 43px;
+}
+.titreService2,
+.titreService3,
+.titreService4 {
+  top: 466px;
+  left: 24px;
+  width: 417px;
+}
+.titreService3,
+.titreService4 {
+  top: 18px;
+  left: 22px;
+  width: 510px;
+}
+.titreService4 {
+  top: 112px;
+  left: 24px;
+  width: 183px;
+}
+.infosDePaiement,
+.modifier {
+  position: absolute;
+  top: 266px;
+  left: 96px;
+  width: 532px;
+  height: 646px;
+}
+.modifier {
+  top: 132px;
+  left: 18px;
+  line-height: 148.8%;
+  color: var(--color-dodgerblue);
+  text-align: center;
+  display: inline-block;
+  width: 149px;
+  height: 32.3px;
+  cursor: pointer;
+}
+.orderSummary1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 32px;
+}
+.fcfa {
+  position: relative;
+  line-height: 24px;
+}
+.price {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.free {
+  position: relative;
+  line-height: 24px;
+  color: var(--verdigris);
+}
+.details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.divider,
+.fcfa3 {
+  position: relative;
+}
+.divider {
+  background-color: var(--french-grey);
+  width: 316px;
+  height: 1px;
+}
+.fcfa3 {
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  text-align: right;
+}
+.delivery,
+.total1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+}
+.total1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 206px;
+}
+.delivery {
+  align-items: center;
+  justify-content: space-between;
+}
+.plusIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.button {
+  position: relative;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+}
+.orderSummary,
+.proceed {
+  box-sizing: border-box;
+  display: flex;
+}
+.proceed {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: #bf6159;
+  height: 52px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg) var(--padding-21xl);
+  gap: var(--gap-base);
+  cursor: pointer;
+  color: var(--font);
+}
+.orderSummary {
+  position: absolute;
+  top: 275px;
+  left: 744px;
+  border-radius: var(--br-11xl);
+  background-color: var(--font);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid var(--french-grey);
+  width: 631px;
+  height: 837px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl);
+  gap: 32px;
+  font-size: var(--typography-label-medium-size);
+  color: var(--space-cadet);
+}
+.identificationRussie {
+  position: relative;
+  background-color: var(--font);
+  width: 100%;
+  height: 2084px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-arial);
+}

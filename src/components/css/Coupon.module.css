@@ -1,0 +1,28 @@
+.placeholder {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+}
+.trailingIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.stateempty {
+  border-radius: var(--br-11xs);
+  border: 1px solid var(--french-grey);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--typography-label-medium-size);
+  color: var(--cool-grey);
+  font-family: var(--typography-label-medium);
+  align-self: stretch;
+}

@@ -1,0 +1,151 @@
+.cadreIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  width: 353px;
+  height: 512px;
+}
+.illustrationIcon {
+  position: absolute;
+  top: 9.2px;
+  left: 12.5px;
+  border-radius: var(--br-11xl) var(--br-11xl) 0 0;
+  width: 329px;
+  height: 228px;
+  object-fit: cover;
+}
+.titreService {
+  position: absolute;
+  top: 245px;
+  left: 12.5px;
+  line-height: 148.8%;
+  display: inline-block;
+  text-align: center;
+  width: 329.4px;
+  height: 43.5px;
+}
+.barreDeRecherche {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-pink);
+  width: 327px;
+  height: 65px;
+}
+.slectionner {
+  position: absolute;
+  top: 13.8px;
+  left: 66.8px;
+  display: inline-block;
+  width: 195.4px;
+  height: 36.4px;
+}
+.boutonSelect {
+  position: absolute;
+  top: 432px;
+  left: 12.5px;
+  width: 327px;
+  height: 65px;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray-200);
+}
+.localisation {
+  position: absolute;
+  top: 7px;
+  left: 52px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 100px;
+  height: 43px;
+}
+.placeMarkerIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+}
+.heure1,
+.location {
+  position: absolute;
+  top: 281px;
+  left: 21.5px;
+  width: 152px;
+  height: 50px;
+}
+.heure1 {
+  top: 3px;
+  left: 55px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 120px;
+  height: 43px;
+}
+.date1,
+.heure,
+.timeIcon {
+  position: absolute;
+  height: 46px;
+}
+.timeIcon {
+  top: 0;
+  left: 0;
+  width: 46px;
+  object-fit: cover;
+}
+.date1,
+.heure {
+  top: 380px;
+  left: 18.5px;
+  width: 175px;
+}
+.date1 {
+  top: 13px;
+  left: 56px;
+  line-height: 148.8%;
+  display: inline-block;
+  width: 120px;
+  height: 43px;
+}
+.plannerIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47px;
+  height: 62px;
+  object-fit: cover;
+}
+.date {
+  top: 321px;
+  left: 17.5px;
+  width: 176px;
+  height: 62px;
+}
+.date,
+.services,
+.xaf {
+  position: absolute;
+}
+.xaf {
+  top: 186px;
+  left: 22.5px;
+  font-size: var(--font-size-21xl);
+  font-weight: 900;
+  color: var(--color-gray-200);
+  display: inline-block;
+  width: 275px;
+  height: 51px;
+}
+.services {
+  top: 460px;
+  left: 46.5px;
+  width: 353px;
+  height: 512px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--font1);
+  font-family: var(--font-arial);
+}

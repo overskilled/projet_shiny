@@ -1,0 +1,427 @@
+.pathIcon {
+  position: absolute;
+  top: -10px;
+  left: -117px;
+  width: 265px;
+  height: 310px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.librezVosJournes {
+  margin: 0;
+}
+.librezVosJournesContainer {
+  position: absolute;
+  top: 497px;
+  left: 78px;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-1100);
+}
+.vousEnAvezContainer {
+  position: absolute;
+  top: 318px;
+  left: 78px;
+  font-size: var(--font-size-45xl);
+  white-space: pre-wrap;
+}
+.mdiprogressTickIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.plusDe10MillesUtilisateurParent {
+  position: absolute;
+  top: 592px;
+  left: 93px;
+  width: 305px;
+  height: 24px;
+}
+.sansEngagement {
+  position: absolute;
+  top: 0;
+  left: 44px;
+}
+.sansCommissionParent,
+.sansEngagementParent {
+  position: absolute;
+  top: 633px;
+  left: 93px;
+  width: 182px;
+  height: 24px;
+}
+.sansCommissionParent {
+  top: 674px;
+  width: 181px;
+}
+.b,
+.contactshinycom,
+.vectorIcon {
+  position: absolute;
+  top: 112px;
+  left: 61px;
+}
+.b,
+.vectorIcon {
+  left: 255px;
+}
+.vectorIcon {
+  height: 30.57%;
+  width: 18.33%;
+  top: 74.61%;
+  right: -2.43%;
+  bottom: -5.18%;
+  left: 84.1%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+}
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--font);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
+    5px 5px 5px rgba(0, 0, 0, 0.09) inset;
+  border: 5px solid var(--color-gray-300);
+  box-sizing: border-box;
+  width: 580px;
+  height: 762px;
+}
+.nomDeLinstitut {
+  position: absolute;
+  top: 140px;
+  left: 63px;
+  text-align: center;
+}
+.groupItem {
+  position: absolute;
+  top: 168px;
+  left: 63px;
+  border-radius: var(--br-3xs);
+  background-color: var(--font);
+  border: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 488px;
+  height: 45px;
+}
+.entrerLeNom {
+  position: absolute;
+  top: 181px;
+  left: 86px;
+  color: var(--color-gray-500);
+}
+.adresse,
+.vousTesGrantContainer {
+  position: absolute;
+  text-align: center;
+}
+.vousTesGrantContainer {
+  top: 64px;
+  left: 103px;
+  font-size: var(--font-size-xl);
+}
+.adresse {
+  top: 328px;
+  left: 63px;
+}
+.groupInner,
+.rectangleDiv {
+  position: absolute;
+  top: 264px;
+  left: 63px;
+  border-radius: var(--br-3xs);
+  background-color: var(--font);
+  border: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 227px;
+  height: 45px;
+}
+.rectangleDiv {
+  top: 357px;
+  background-color: var(--color-snow);
+}
+.nomDuResponsable,
+.tlphone {
+  position: absolute;
+  top: 232px;
+  left: 63px;
+  text-align: center;
+}
+.tlphone {
+  top: 332px;
+  left: 324px;
+}
+.groupChild1,
+.lineDiv {
+  position: absolute;
+  box-sizing: border-box;
+}
+.groupChild1 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-snow);
+  border: 1px solid var(--color-gray-500);
+  width: 227px;
+  height: 45px;
+}
+.lineDiv {
+  top: -0.5px;
+  left: calc(50% - 62px);
+  border-right: 1px solid var(--color-gray-500);
+  width: 1px;
+  height: 47px;
+}
+.rectangleGroup {
+  position: absolute;
+  top: 357px;
+  left: 324px;
+  width: 227px;
+  height: 46px;
+}
+.emojioneflagForCameroonIcon {
+  position: absolute;
+  top: 369px;
+  left: 333px;
+  width: 23px;
+  height: 23px;
+  overflow: hidden;
+}
+.polygonIcon {
+  position: absolute;
+  top: 373px;
+  left: 356px;
+  width: 19px;
+  height: 16px;
+  object-fit: contain;
+}
+.span {
+  color: var(--color-gray-500);
+}
+.div {
+  position: absolute;
+  top: 374px;
+  left: 390px;
+  text-align: center;
+  color: var(--color-black);
+}
+.entrerVotreNom,
+.regionsVille {
+  position: absolute;
+  top: 371px;
+  left: 87px;
+  color: var(--color-gray-500);
+}
+.entrerVotreNom {
+  top: 278px;
+  left: 88px;
+}
+.spcialists {
+  position: absolute;
+  top: 456px;
+  left: 64px;
+  text-align: center;
+}
+.groupChild2 {
+  position: absolute;
+  top: 483px;
+  left: 130px;
+  border-radius: var(--br-3xs);
+  background-color: var(--font);
+  border: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 344px;
+  height: 45px;
+}
+.massage {
+  position: absolute;
+  top: 497px;
+  left: 177px;
+  color: var(--color-black);
+}
+.eiplusIcon,
+.groupChild3 {
+  position: absolute;
+  top: 483px;
+}
+.groupChild3 {
+  left: 66px;
+  background-color: var(--color-whitesmoke-200);
+  width: 51px;
+  height: 45px;
+}
+.eiplusIcon {
+  left: 474px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.div1 {
+  position: absolute;
+  top: 493px;
+  left: 85px;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.gridiconsdropdown {
+  position: absolute;
+  top: 487px;
+  left: 423px;
+  width: 41px;
+  height: 41px;
+  overflow: hidden;
+}
+.email {
+  position: absolute;
+  top: 232px;
+  left: 334px;
+  text-align: center;
+}
+.groupChild4 {
+  position: absolute;
+  top: 261px;
+  left: 324px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-snow);
+  border: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 227px;
+  height: 45px;
+}
+.entrerVotreEmail,
+.horiares {
+  position: absolute;
+  top: 275px;
+  left: 348px;
+  color: var(--color-gray-500);
+}
+.horiares {
+  top: 568px;
+  left: 67px;
+  color: var(--color-black);
+}
+.fermeture,
+.ouverture {
+  position: absolute;
+  top: 608px;
+  left: 91px;
+  color: var(--color-springgreen);
+}
+.fermeture {
+  top: 610px;
+  left: 336px;
+  color: var(--color-red-100);
+}
+.groupChild5,
+.groupChild6 {
+  position: absolute;
+  top: -0.5px;
+  box-sizing: border-box;
+  height: 33px;
+}
+.groupChild5 {
+  left: -0.5px;
+  border-radius: var(--br-12xs);
+  background-color: var(--color-gray-700);
+  border: 1px solid var(--color-gray-600);
+  width: 83px;
+}
+.groupChild6 {
+  left: 40.5px;
+  border-right: 1px solid var(--color-gray-800);
+  width: 1px;
+}
+.rectangleContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 32px;
+}
+.gridiconsdropdown1,
+.gridiconsdropdown2 {
+  position: absolute;
+  top: 6px;
+  left: 63px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.gridiconsdropdown2 {
+  top: 5px;
+  left: 20px;
+}
+.groupParent,
+.hh,
+.mm {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+}
+.groupParent,
+.mm {
+  left: 43px;
+  color: var(--color-gray-1000);
+}
+.groupParent {
+  top: 604px;
+  left: 190px;
+  width: 87px;
+  height: 32px;
+  color: var(--color-gray-900);
+}
+.groupContainer,
+.hh1 {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+}
+.groupContainer {
+  top: 604px;
+  left: 444px;
+  width: 87px;
+  height: 32px;
+  color: var(--color-gray-900);
+}
+.groupChild9 {
+  position: absolute;
+  top: 660px;
+  left: 70px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-lightcoral-200);
+  width: 463px;
+  height: 65px;
+}
+.senregistrer {
+  position: absolute;
+  top: 679px;
+  left: 236px;
+  font-size: var(--font-size-5xl);
+  color: var(--font);
+}
+.rectangleParent {
+  position: absolute;
+  top: 145px;
+  left: 801px;
+  width: 580px;
+  height: 762px;
+  color: var(--color-gray-400);
+}
+.instituteLogin {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  background-image: url(/public/institute-login@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--typography-label-medium-size);
+  color: var(--color-black);
+  font-family: var(--font-arial);
+}

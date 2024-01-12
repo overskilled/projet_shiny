@@ -1,0 +1,72 @@
+.searchBarre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-gray-100);
+  filter: blur(4px);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 820px;
+  height: 82px;
+}
+.boutonSearchIcon {
+  position: absolute;
+  top: 21px;
+  left: 765px;
+  width: 41px;
+  height: 40px;
+  overflow: hidden;
+}
+.barreDeRecherche1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-whitesmoke-300);
+  width: 374px;
+  height: 66px;
+}
+.specialisteInstitute {
+  position: absolute;
+  top: 18px;
+  left: 31px;
+}
+.barreDeRecherche2,
+.instituteSearch {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 374px;
+  height: 66px;
+}
+.barreDeRecherche2 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  background-color: var(--color-whitesmoke-300);
+  width: 323px;
+}
+.location,
+.locationSearch {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+.locationSearch {
+  top: 8px;
+  left: 417px;
+  width: 323px;
+  height: 66px;
+}
+.barreDeRecherche {
+  position: absolute;
+  top: 285px;
+  left: 310px;
+  width: 820px;
+  height: 82px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+}
