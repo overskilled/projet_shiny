@@ -13,7 +13,7 @@ import Identification from "./pages/Identification";
 import ConfigurationDuPaiementAvec from "./pages/ConfigurationDuPaiementAvec";
 import ConfigurationDuPaiement from "./pages/ConfigurationDuPaiement";
 import ServiceChoisi from "./pages/ServiceChoisi";
-import CustpmerLogin from "./pages/CustomerLogin";
+import CustomerLogin from "./pages/CustomerLogin";
 import RservationServices from "./pages/RservationServices";
 import ProfessionelLogin from "./pages/ProfessionelLogin";
 import RservationServicesV2 from "./pages/RservationServicesV2";
@@ -116,7 +116,7 @@ function App() {
       <Route path="/identification-russie" element={<IdentificationRussie />} />
       <Route path="/identification" element={<Identification />} />
       <Route path="/configuration-du-paiement-avec-ajout-de-prestation" element={<ConfigurationDuPaiementAvec />} />
-      <Rout path="/configuration-du-paiement" element={<ConfigurationDuPaiement />} />
+      <Route path="/configuration-du-paiement" element={<ConfigurationDuPaiement />} />
       <Route path="/-service-choisi" element={<ServiceChoisi />} />
       <Route path="/login" element={<CustomerLogin />} />
       <Route path="/rservation-services" element={<RservationServices />} />

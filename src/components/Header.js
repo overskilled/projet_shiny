@@ -141,7 +141,7 @@ const Header = ({
       <div className={styles.menu}>
         <b className={styles.nosServices} onClick={onNosServicesTextClick}>
           Nos services
-        </b>
+        </b> 
         <b className={styles.barbier}>Barbier</b>
         <b className={styles.coiffeur}>Coiffeur</b>
         <b className={styles.institutDeBeaut}>Institut de beauté</b>

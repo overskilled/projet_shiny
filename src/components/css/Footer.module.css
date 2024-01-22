@@ -128,7 +128,7 @@
   top: 1433px;
   left: 0;
   background-color: var(--blue);
-  width: 1440px;
+  width: 100%;
   height: 651px;
   overflow: hidden;
   text-align: left;
