@@ -40,129 +40,166 @@ const Identification = () => {
   }, [navigate]);
 
   return (
-    <div className={styles.identification}>
-      <Header
-        connectionLabel="connexion"
-        connectionId="/materialsymbolsperson.svg"
-        showBoutonConnexion
-        showRectangleDiv
-        showBoutonAjouterTablissement
-        rectangleDivVisible
-        showAjouterVotreTablissement
-        propTop="-1px"
-        propCursor="pointer"
-        propHeight="53.56%"
-        propWidth="12.06%"
-        propTop1="22.67%"
-        propRight="1.54%"
-        propBottom="23.78%"
-        propLeft="86.4%"
-        propHeight1="100%"
-        propWidth1="100%"
-        propTop2="0%"
-        propRight1="0%"
-        propBottom1="0%"
-        propLeft1="0%"
-        propHeight2="37.76%"
-        propWidth2="44.18%"
-        propTop3="33.4%"
-        propLeft2="31.39%"
-        propHeight3="62.24%"
-        propWidth3="16.3%"
-        propTop4="17.84%"
-        propRight2="77.3%"
-        propBottom2="19.92%"
-        propLeft3="6.39%"
-        propHeight4="53.56%"
-        propWidth4="17.45%"
-        propRight3="15.28%"
-        propBottom3="23.78%"
-        propHeight5="100%"
-        propWidth5="100%"
-        propTop5="0%"
-        propRight4="0%"
-        propBottom4="0%"
-        propLeft4="0%"
-        propHeight6="37.76%"
-        propWidth6="79.51%"
-        propTop6="33.4%"
-        propLeft5="10.03%"
-        onNosServicesTextClick={onNosServicesTextClick}
-        onShinyLogoTextClick={onShinyLogoTextClick}
-        onBoutonConnexionContainerClick={onBoutonConnexionContainerClick}
-        onBoutonAjouterTablissementClick={onBoutonAjouterTablissementClick}
-      />
-      <Footer elginStCelinaTop="1433px" />
-      <div className={styles.location}>
-        <b className={styles.localisation}>Douala</b>
-        <img className={styles.locationIcon} alt="" src="/location@2x.png" />
-      </div>
-      <div className={styles.avis}>
-        <div className={styles.avis1}>{`4.0 ( 1000 avis) `}</div>
-        <img className={styles.starIcon} alt="" src="/star@2x.png" />
-      </div>
-      <b className={styles.titreService}>{`Shiny Coiffure `}</b>
-      <div className={styles.prestationSelect}>
-        <div className={styles.cadre} />
-        <div className={styles.prestation}>Coupe Garçon - 14 ans</div>
-        <div className={styles.modifier} onClick={onPrestationText1Click}>
-          supprimer
-        </div>
-        <div className={styles.tempsPrix}>{`30 min `}</div>
-        <div className={styles.tempsPrix1}> 8000 XAF</div>
-        <div className={styles.prestationSelectChild} />
-      </div>
-      <div className={styles.dateEtHeureSelect}>
-        <div className={styles.cadre} />
-        <div className={styles.date}>Vendredi 12 Janvier</div>
-        <div className={styles.heure}>à 11 : 00</div>
-        <div className={styles.modifier} onClick={onModifierTextClick}>
-          modifier
-        </div>
-        <img
-          className={styles.dateEtHeureSelectChild}
-          alt=""
-          src="/ellipse-18.svg"
-        />
-      </div>
-      <div className={styles.identification1}>
-        <div className={styles.cadre2} />
-        <b className={styles.titreService1}>Je suis Nouveau sur Shiny ?</b>
-        <b className={styles.titreService2}>Je déjà utilisé Shiny ?</b>
-        <div className={styles.crerCompte} onClick={onCrerCompteContainerClick}>
-          <div className={styles.cerUnCompte} />
-          <div className={styles.titreService3}>Créer mon compte</div>
-        </div>
-        <div
-          className={styles.crerCompte1}
-          onClick={onCrerCompteContainer1Click}
-        >
-          <div className={styles.cerUnCompte1} />
-          <b className={styles.titreService3}>Se Connecter</b>
-        </div>
-        <div className={styles.orBarre}>
-          <b className={styles.or}>OU</b>
-          <div className={styles.orBarreChild} />
-          <div className={styles.orBarreItem} />
-        </div>
-      </div>
-      <div className={styles.identificationChild} />
-      <b className={styles.titreService5}>
-        <ul className={styles.prestationSlectionne}>
-          <li>Prestation sélectionnée</li>
-        </ul>
-      </b>
-      <b className={styles.titreService6}>
-        <ul className={styles.prestationSlectionne}>
-          <li>Date et l’heure sélectionnées</li>
-        </ul>
-      </b>
-      <b className={styles.titreService7}>
-        <ul className={styles.prestationSlectionne}>
-          <li>Identification</li>
-        </ul>
-      </b>
+    <div className="container" style={{ padding: "5% 10%" }}>
+  <h5>Shinny Coiffure</h5>
+  <div>
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <i className="fa fa-map-marker" style={{ marginLeft: 5 }} />
+      <p style={{ margin: 0, marginLeft: 5 }}>
+        <strong>Douala</strong>
+      </p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+        className="bi bi-dot"
+        style={{ marginLeft: 5 }}
+      >
+        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+      </svg>
+      <i className="fa fa-star" style={{ marginLeft: 5 }} />
+      <p style={{ margin: 0, marginLeft: 5 }}>4.0 ( 1000 amis)</p>
     </div>
+    <div style={{ marginTop: 25 }}>
+      <h4>1. Prestation Sélectionnée</h4>
+      <div
+        className="row"
+        style={{
+          outline: "solid 1px grey",
+          borderRadius: 10,
+          padding: 20,
+          boxShadow: "grey 0px 10px 10px -10px",
+          margin: 0
+        }}
+      >
+        <div
+          className="col"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            padding: 0,
+            justifyContent: "center"
+          }}
+        >
+          <p style={{ margin: 0 }}>Coupe Garcon - 14 ans</p>
+          <p style={{ margin: 0 }}>30 min - 8000 XAF</p>
+        </div>
+        <div className="col" style={{ display: "flex", justifyContent: "end" }}>
+          <button
+            className="btn btn-primary"
+            type="button"
+            style={{ background: "none", border: "none", color: "blue" }}
+          >
+            Supprimer
+          </button>
+        </div>
+      </div>
+    </div>
+    <div style={{ marginTop: 25 }}>
+      <h4>2.&nbsp;Date et l’Heure Sélectionnées</h4>
+      <div
+        className="row"
+        style={{
+          outline: "solid 1px grey",
+          borderRadius: 10,
+          padding: 20,
+          boxShadow: "grey 0px 10px 10px -10px",
+          margin: 0
+        }}
+      >
+        <div
+          className="col"
+          style={{ display: "flex", alignItems: "center", padding: 0 }}
+        >
+          <p style={{ fontWeight: "bold", margin: 0 }}>Vendredi 12 Janvier</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            className="bi bi-dot"
+            style={{
+              height: "100%",
+              paddingTop: "3%",
+              color: "var(--bs-gray-500)"
+            }}
+          >
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          </svg>
+          <p style={{ margin: 0 }}>à 11 : 00</p>
+        </div>
+        <div className="col" style={{ display: "flex", justifyContent: "end" }}>
+          <button
+            className="btn btn-primary"
+            type="button"
+            style={{ background: "none", border: "none", color: "blue" }}
+          >
+            Modifier
+          </button>
+        </div>
+      </div>
+    </div>
+    <div style={{ marginTop: 25 }}>
+      <h4>3. Identification</h4>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          outline: "solid 1px grey",
+          borderRadius: 10,
+          boxShadow: "grey 0px 10px 10px -10px",
+          width: "100%",
+          padding: 20
+        }}
+      >
+        <h1>Je suis Nouveau sur Shiny?</h1>
+        <button
+          className="btn btn-primary"
+          type="button"
+          style={{
+            background: "var(--bs-btn-disabled-color)",
+            color: "var(--bs-black)",
+            borderColor: "var(--bs-gray-dark)",
+            borderRadius: 10,
+            padding: 10,
+            boxShadow: "grey 0px 10px 10px -10px",
+            width: "80%",
+            margin: "20px 0px"
+          }}
+        >
+          Créer mon compte
+        </button>
+        <p
+          className="bloc"
+          style={{ overflow: "hidden", textAlign: "center", width: "100%" }}
+        >
+          Ou
+        </p>
+        <h1>Je déjà utilisé Shiny?</h1>
+        <button
+          className="btn btn-primary"
+          type="button"
+          style={{
+            background: "var(--bs-gray-dark)",
+            outline: "solid 1px grey",
+            borderRadius: 10,
+            padding: 10,
+            boxShadow: "grey 0px 10px 10px -10px",
+            width: "80%",
+            margin: "20px 0px"
+          }}
+        >
+          Se Connecter
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
   );
 };
 

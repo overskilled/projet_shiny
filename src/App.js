@@ -6,19 +6,21 @@ import {
   useLocation,
 } from "react-router-dom";
 import Acceuil from "./pages/Acceuil";
-import PaiementOthers from "./pages/PaiementOthers";
-import Paiement from "./pages/Paiement";
-import IdentificationRussie from "./pages/IdentificationRussie";
+// import PaiementOthers from "./pages/PaiementOthers";
+import Payment from "./pages/Payment";
+import IdentificationReussi from "./pages/IdentificationReussi";
 import Identification from "./pages/Identification";
-import ConfigurationDuPaiementAvec from "./pages/ConfigurationDuPaiementAvec";
+// import ConfigurationDuPaiementAvec from "./pages/ConfigurationDuPaiementAvec";
 import ConfigurationDuPaiement from "./pages/ConfigurationDuPaiement";
-import ServiceChoisi from "./pages/ServiceChoisi";
+import ChoixService from "./pages/ChoixService";
 import CustomerLogin from "./pages/CustomerLogin";
-import RservationServices from "./pages/RservationServices";
-import ProfessionelLogin from "./pages/ProfessionelLogin";
-import RservationServicesV2 from "./pages/RservationServicesV2";
-import InstituteLogin from "./pages/InstituteLogin";
-import ProfessinelChoice from "./pages/ProfessinelChoice";
+import ReservationService from "./pages/ReservationService";
+import ProRegistration from "./pages/ProRegistration";
+// import RservationServicesV2 from "./pages/RservationServicesV2";
+import InstituteRegistration from "./pages/InstitueRegistration";
+import Card from "./Card";
+import CustomerSignUp from "./pages/CustomerSignUp";
+// import ProfessinelChoice from "./pages/ProfessinelChoice";
 
 function App() {
   const action = useNavigationType();
@@ -111,19 +113,22 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Acceuil />} />
-      <Route path="/paiement-others" element={<PaiementOthers />} />
-      <Route path="/paiement" element={<Paiement />} />
-      <Route path="/identification-russie" element={<IdentificationRussie />} />
+      {/* <Route path="/paiement-others" element={<PaiementOthers />} /> */}
+      <Route path="/paiement" element={<Payment />} />
+      <Route path="/identification-reussi" element={<IdentificationReussi />} />
       <Route path="/identification" element={<Identification />} />
-      <Route path="/configuration-du-paiement-avec-ajout-de-prestation" element={<ConfigurationDuPaiementAvec />} />
+      {/* <Route path="/configuration-du-paiement-avec-ajout-de-prestation" element={<ConfigurationDuPaiementAvec />} /> */}
       <Route path="/configuration-du-paiement" element={<ConfigurationDuPaiement />} />
-      <Route path="/-service-choisi" element={<ServiceChoisi />} />
+      <Route path="/choix-service" element={<ChoixService />} />
       <Route path="/login" element={<CustomerLogin />} />
-      <Route path="/rservation-services" element={<RservationServices />} />
-      <Route path="/professionel-login" element={<ProfessionelLogin />} />
-      <Route path="/rservation-services-v2" element={<RservationServicesV2 />}/>
-      <Route path="/institute-login" element={<InstituteLogin />} />
-      <Route path="/professinel-choice" element={<ProfessinelChoice />} />
+      <Route path="/reservation-services" element={<ReservationService />} />
+      <Route path="/professionel-Registration" element={<ProRegistration />} />
+      {/* <Route path="/rservation-services-v2" element={<RservationServicesV2 />}/> */}
+      <Route path="/institute-Registration" element={<InstituteRegistration />} />
+      {/* <Route path="/professinel-choice" element={<ProfessinelChoice />} /> */}
+      <Route path="/customer-registration" element={<CustomerSignUp />} />
+      <Route path="/card" element={<Card />} />
+
     </Routes>
   );
 }

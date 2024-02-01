@@ -33,363 +33,1140 @@ const Acceuil = () => {
   }, [navigate]);
 
   return (
-    <div className={styles.acceuil}>
-      <Footer elginStCelinaTop="6525px" />
-      <div className={styles.section6}>
-        <div className={styles.card}>
-          <div className={styles.cardChild} />
-          <div className={styles.text}>
-            <div className={styles.text1}>
-              <b className={styles.b}>
-                <span>
-                  <span className={styles.span}>01</span>
-                  <span className={styles.span1}>{` `}</span>
-                  <span className={styles.span2}>/</span>
-                </span>
-                <span className={styles.span2}>
-                  <span>05</span>
-                </span>
-              </b>
-              <div className={styles.wowVeryAmazing}>
-                Wow! Very amazing. Thanks for the products from Shiny, I really
-                love using skin products to help me out in the sun! I'm waiting
-                for an amazing new product :)
-              </div>
-            </div>
-            <div className={styles.stevanusPutri}>Stevanus Putri</div>
-          </div>
+    <>
+  <div
+    className="container d-flex justify-content-around align-items-xxl-center"
+    style={{
+      background: "var(--bs-success)",
+      width: "initial",
+      maxWidth: "100%",
+      height: 80,
+      paddingTop: 25
+    }}
+  >
+    <img
+      src="assets/img/Shiny%20Logo.png"
+      style={{ width: 115, minWidth: 41 }}
+    />
+    <div
+      className="d-flex justify-content-between"
+      style={{
+        fontSize: 15,
+        fontFamily: "arial",
+        fontWeight: "bold",
+        paddingTop: 11,
+        width: 600
+      }}
+    >
+      <p>Coiffeur</p>
+      <p>Barbier</p>
+      <p>Nos Services</p>
+      <p>Institut de beauté</p>
+      <p>Institut de massage</p>
+    </div>
+    <div className="d-flex justify-content-between" style={{ width: 450 }}>
+      <button
+        className="btn btn-primary"
+        type="button"
+        style={{
+          background: "var(--bs-secondary)",
+          borderColor: "var(--bs-secondary)",
+          borderRadius: 40,
+          fontFamily: "arial",
+          fontSize: 15,
+          fontWeight: "bold",
+          color: "rgb(255,255,255)",
+          width: 251,
+          height: 48
+        }}
+      >
+        Ajouter un établissement
+      </button>
+      <button
+        className="btn btn-primary"
+        type="button"
+        style={{
+          background: "var(--bs-secondary)",
+          borderColor: "var(--bs-secondary)",
+          borderRadius: 40,
+          fontSize: 15,
+          fontFamily: "arial",
+          color: "rgb(255,255,255)",
+          fontWeight: "bold",
+          height: 48,
+          width: 174
+        }}
+      >
+        <img src="assets/img/material-symbols_person.png" />
+        Connexion
+      </button>
+    </div>
+  </div>
+  <section className="py-4 py-xl-5" style={{ background: "var(--bs-success)" }}>
+    <div className="container d-flex justify-content-between">
+      <div style={{ paddingTop: 70, width: 700 }}>
+        <div className="d-flex align-items-center justify-content-xxl-start">
+          <p
+            className="fw-bold d-xxl-flex align-items-xxl-end"
+            style={{ fontSize: 50, fontFamily: "arial", maxWidth: "293.594px" }}
+          >
+            Welcome to&nbsp;
+          </p>
+          <p
+            className="d-xxl-flex align-items-xxl-end"
+            style={{
+              color: "#F07777",
+              fontSize: 70,
+              fontFamily: "arial",
+              fontWeight: "bold"
+            }}
+          >
+            Shiny
+          </p>
         </div>
-        <img className={styles.path02Icon} alt="" src="/path-02@2x.png" />
-        <div className={styles.pagenation}>
-          <div className={styles.rectangleParent}>
-            <div className={styles.frameChild} />
-            <div className={styles.frameItem} />
-            <div className={styles.frameItem} />
-            <div className={styles.frameItem} />
-          </div>
-          <div className={styles.arrowRightParent}>
-            <img
-              className={styles.arrowRightIcon}
-              alt=""
-              src="/arrowright.svg"
-            />
-            <img
-              className={styles.arrowRightIcon1}
-              alt=""
-              src="/arrowright.svg"
-            />
-          </div>
-        </div>
+        <p style={{ fontSize: 34, fontWeight: "bold", fontFamily: "arial" }}>
+          Beauty care at hand.
+        </p>
+        <p
+          style={{
+            fontWeight: "bold",
+            fontSize: 35,
+            color: "#FF9090",
+            paddingTop: 90
+          }}
+        >
+          Book a ...
+        </p>
+      </div>
+      <div>
         <img
-          className={styles.section6Child}
-          alt=""
-          src="/rectangle-26@2x.png"
+          src="assets/img/Photo%20de%20présentation.png"
+          style={{ width: 470 }}
         />
       </div>
-      <div className={styles.section5}>
-        <div className={styles.whatCustomersSay}>
-          What customers say about our services and products
-        </div>
-        <img className={styles.path01Icon} alt="" src="/path-01@2x.png" />
-        <div className={styles.button}>
-          <div className={styles.text2}>
-            <div className={styles.seeMore}>See More</div>
-            <img className={styles.icon} alt="" src="/icon.svg" />
-          </div>
-        </div>
-        <Products
-          productImageId="/image@2x.png"
-          productDescription="Tagea Cream"
-          propLeft="119px"
-          propAlignItems="flex-start"
-          propTop="73px"
-          propGap="156px"
-          propJustifyContent="center"
-        />
-        <Products
-          productImageId="/image@2x.png"
-          productDescription="Solid Black Cream"
-          propLeft="530px"
-          propAlignItems="center"
-          propTop="73px"
-          propGap="87px"
-          propJustifyContent="center"
-          propWidth="unset"
-        />
-        <Products
-          productImageId="/image@2x.png"
-          productDescription="Navy Cream"
-          propLeft="117px"
-          propAlignItems="center"
-          propTop="616px"
-          propGap="unset"
-          propJustifyContent="space-between"
-          propWidth="375px"
-        />
-        <Products
-          productImageId="/image@2x.png"
-          productDescription="Green Light Cream"
-          propLeft="530px"
-          propAlignItems="flex-start"
-          propTop="616px"
-          propGap="unset"
-          propJustifyContent="space-between"
-          propWidth="375px"
-        />
-        <div className={styles.card02}>
-          <img className={styles.imageIcon} alt="" src="/image@2x.png" />
-          <div className={styles.title}>
-            <div className={styles.washCream}>Wash Cream</div>
-            <div className={styles.icon1}>
-              <img className={styles.starIcon} alt="" src="/star.svg" />
-              <div className={styles.div}>4.8</div>
-            </div>
-          </div>
-          <div className={styles.text3}>
-            <div className={styles.text4}>
-              <div className={styles.fcfa}>10000FCFA</div>
-              <div className={styles.text5}>
-                <div className={styles.div1}>30%</div>
-              </div>
-            </div>
-            <b className={styles.fcfa1}>70000FCFA</b>
-          </div>
-        </div>
-        <div className={styles.card01}>
-          <img className={styles.imageIcon} alt="" src="/image@2x.png" />
-          <div className={styles.title1}>
-            <div className={styles.washCream}>Pingky Cream</div>
-            <div className={styles.icon1}>
-              <img className={styles.starIcon} alt="" src="/star.svg" />
-              <div className={styles.div}>4.7</div>
-            </div>
-          </div>
-          <div className={styles.text3}>
-            <div className={styles.text4}>
-              <div className={styles.fcfa}>10000FCFA</div>
-              <div className={styles.text5}>
-                <div className={styles.div1}>30%</div>
-              </div>
-            </div>
-            <b className={styles.fcfa1}>70000FCFA</b>
-          </div>
-        </div>
-      </div>
-      <div className={styles.section4}>
-        <div className={styles.variousShinyProducts}>
-          Various Shiny products
-        </div>
-        <div className={styles.consultYourProblemWithTheParent}>
-          <div className={styles.consultYourProblem}>
-            Consult your problem with the experts
-          </div>
-          <div className={styles.overcomeTreatmentProblems}>
-            Overcome treatment problems by getting free consultations from
-            health experts from various countries that we have provided`
-          </div>
-          <div className={styles.button1} onClick={onButtonContainer1Click}>
-            <div className={styles.div}>Consultant Now</div>
-          </div>
-        </div>
-        <img className={styles.section4Child} alt="" src="/vector-1.svg" />
-        <img className={styles.pathIcon} alt="" src="/path@2x.png" />
-        <div className={styles.image}>
-          <img
-            className={styles.imageChild}
-            alt=""
-            src="/rectangle-16@2x.png"
-          />
-          <div className={styles.frontViewWomanDoingSpaTre} />
-        </div>
-        <div className={styles.card1}>
-          <img className={styles.imageIcon2} alt="" src="/image@2x.png" />
-          <div className={styles.text9}>
-            <div className={styles.solidBlackCream}>Solid Black Cream</div>
-            <div className={styles.icon3}>
-              <img className={styles.starIcon} alt="" src="/star.svg" />
-              <div className={styles.div}>4.8</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.section3}>
-        <div className={styles.section31}>
-          <div className={styles.image1}>
-            <img className={styles.imageIcon3} alt="" src="/image@2x.png" />
-            <img className={styles.icon4} alt="" src="/icon@2x.png" />
-          </div>
-          <div className={styles.card2}>
-            <div className={styles.card3}>
-              <div className={styles.text10}>
-                <div className={styles.quoteToday}>Quote today</div>
-                <div className={styles.everyTimeYou}>
-                  “ Every time you create beauty around you, you restore your
-                  own soul. So be a great woman from the outside and inside “
-                </div>
-              </div>
-              <div className={styles.aliceWalker}>Alice Walker</div>
-            </div>
-            <img className={styles.pathIcon1} alt="" src="/path@2x.png" />
-          </div>
-        </div>
-      </div>
-      <div className={styles.section2}>
-        <div className={styles.section2Child} />
-        <div className={styles.card4}>
-          <div className={styles.card11}>
-            <img className={styles.imageIcon4} alt="" src="/image@2x.png" />
-            <div className={styles.text11}>
-              <div className={styles.div5}>02</div>
-              <div className={styles.serenityMassages}>Serenity Massages</div>
-              <div className={styles.indulgeInBlissfulContainer}>
-                <p className={styles.indulgeInBlissfulRelaxation}>
-                  <span
-                    className={styles.indulgeInBlissful}
-                  >{`Indulge in blissful relaxation with `}</span>
-                  <span className={styles.our}>our</span>
-                  <span className={styles.rejuvenatingMassagesEscape}>
-                    {" "}
-                    rejuvenating massages. Escape the stress, unwind, and let
-                    our skilled therapists soothe
-                  </span>
-                </p>
-                <p className={styles.yourSenses}>your senses.</p>
-              </div>
-            </div>
-          </div>
-          <div className={styles.card21}>
-            <div className={styles.beautyIsPartContainer}>
-              <p className={styles.indulgeInBlissfulRelaxation}>
-                Beauty is part of the
-              </p>
-              <p className={styles.indulgeInBlissfulRelaxation}>
-                privilege of women
-              </p>
-            </div>
-            <div className={styles.text12}>
-              <div className={styles.div5}>01</div>
-              <div className={styles.serenityMassages}>Radiant Glow Await</div>
-              <div className={styles.revitalizeYourSkinContainer}>
-                <p
-                  className={styles.indulgeInBlissfulRelaxation}
-                >{`Revitalize your skin and embrace a luminous glow with our premium `}</p>
-                <p
-                  className={styles.indulgeInBlissfulRelaxation}
-                >{`skincare treatments. From rejuvenating facials to tailored  skincare `}</p>
-                <p className={styles.indulgeInBlissfulRelaxation}>
-                  regimens, discover the secret to radiant beauty at our
-                </p>
-                <p className={styles.indulgeInBlissfulRelaxation}>
-                  sanctuary of indulgence.
-                </p>
-              </div>
-            </div>
-            <img className={styles.imageIcon5} alt="" src="/image@2x.png" />
-          </div>
-        </div>
-        <img className={styles.pathIcon2} alt="" src="/path@2x.png" />
-        <div className={styles.button2} onClick={onButtonContainer2Click}>
-          <div className={styles.div}>View All Services</div>
-        </div>
-      </div>
-      <div className={styles.section1}>
-        <div className={styles.text13}>
-          <div className={styles.image2} />
-          <div className={styles.image3} />
-          <div className={styles.beautyIsPart1}>
-            Beauty is part of women's privileges still do body care to always
-            maintain your beautiful features. Let's join other women to get
-            products from the latest Brand.
-          </div>
-        </div>
-      </div>
-      <div className={styles.background} />
-      <div className={styles.background} />
-      <img
-        className={styles.photoDePrsentation}
-        alt=""
-        src="/photo-de-prsentation@2x.png"
+    </div>
+    <div
+      className="d-flex justify-content-around align-items-center"
+      style={{
+        width: 750,
+        paddingLeft: 0,
+        marginLeft: 113,
+        background: "#FFFEFE",
+        height: 70,
+        borderRadius: 30
+      }}
+    >
+      <input
+        className="placeholder form-control-lg"
+        type="text"
+        style={{
+          background: "#E9E9E9",
+          width: 350,
+          height: 52,
+          borderRadius: 20,
+          borderStyle: "none",
+          borderColor: "#E9E9E9",
+          borderTopColor: "#E9E9E9",
+          borderRightColor: "#E9E9E9",
+          borderBottomColor: "#E9E9E9",
+          borderLeftStyle: "none",
+          borderLeftColor: "#E9E9E9",
+          color: "#302B2B"
+        }}
+        placeholder="Spécialiste, Institute ..."
       />
-      <b className={styles.bookA}>Book a ...</b>
-      <div className={styles.materialSymbolssearch} />
-      <div className={styles.barreDeRecherche}>
-        <div className={styles.searchBarre} />
-        <img
-          className={styles.boutonSearchIcon}
-          alt=""
-          src="/bouton-search.svg"
-          onClick={onBoutonSearchIconClick}
-        />
-        <div className={styles.instituteSearch}>
-          <div className={styles.barreDeRecherche1} />
-          <div className={styles.specialisteInstitute}>
-            Specialiste, Institute ...
-          </div>
+      <input
+        className="placeholder form-control-lg"
+        type="text"
+        style={{
+          background: "#E9E9E9",
+          width: 300,
+          height: 52,
+          borderRadius: 20,
+          borderTopStyle: "none",
+          borderRightStyle: "none",
+          borderBottomWidth: 0,
+          borderBottomColor: "#E9E9E9",
+          borderLeftStyle: "none",
+          borderLeftColor: "var(--bs-black)"
+        }}
+        placeholder="Location"
+      />
+      <img src="assets/img/bouton%20search.png" />
+    </div>
+  </section>
+  <div className="container" style={{ width: "75%", marginTop: 20 }}>
+    <img src="assets/img/Image%20(10).png" style={{ marginLeft: 853 }} />
+    <p
+      style={{
+        fontSize: 48,
+        color: "#3A2D32",
+        textAlign: "center",
+        marginTop: "-70px"
+      }}
+    >
+      <br />
+      Beauty is part of women's privileges still do body care to always maintain
+      your beautiful features. Let's join other women to get products from the
+      latest Brand.
+      <br />
+      <br />
+    </p>
+    <img
+      src="assets/img/Image%20(10).png"
+      style={{ marginTop: "-80px", marginLeft: 237 }}
+    />
+  </div>
+  <div
+    className="container d-flex justify-content-between"
+    style={{ width: "83%" }}
+  >
+    <div>
+      <img
+        src="assets/img/Ellipse%201.png"
+        style={{ marginTop: "-319px", marginLeft: "-112px" }}
+      />
+      <img
+        src="assets/img/Image.png"
+        style={{ marginTop: 35, marginLeft: "-251px" }}
+      />
+      <div style={{ width: 478, marginBottom: 76 }}>
+        <p
+          style={{
+            marginTop: 40,
+            color: "#221E42",
+            fontSize: 48,
+            fontWeight: "bold",
+            fontFamily: "Playfair Display"
+          }}
+        >
+          01
+        </p>
+        <p
+          style={{
+            color: "#FF9090",
+            fontSize: 40,
+            fontFamily: "Playfair Display",
+            fontWeight: "bold",
+            marginTop: "-9px"
+          }}
+        >
+          Serenity Massages
+        </p>
+        <p
+          style={{
+            fontSize: 20,
+            color: "#565656",
+            fontFamily: "Playfair Display",
+            fontWeight: "bold",
+            marginTop: "-12px"
+          }}
+        >
+          Indulge in blissful relaxation with our rejuvenating massages. Escape
+          the stress, unwind, and let our skilled therapists soothe your sense
+        </p>
+        <button
+          className="btn btn-primary"
+          type="button"
+          style={{
+            width: 192,
+            height: 56,
+            fontFamily: "DM sans-serif",
+            color: "rgb(245,245,245)",
+            fontWeight: "bold",
+            borderRadius: 0,
+            background: "#221E42",
+            borderStyle: "none"
+          }}
+        >
+          View all Services
+        </button>
+      </div>
+    </div>
+    <div style={{ marginLeft: 103 }}>
+      <div className="d-flex">
+        <div>
+          <p
+            style={{
+              color: "#FF9090",
+              fontSize: 52,
+              fontFamily: "Playfair Display",
+              width: 475,
+              marginTop: 18
+            }}
+          >
+            Beauty is part of the privilege of women
+          </p>
+          <p
+            style={{
+              fontSize: 48,
+              color: "#221E42",
+              fontFamily: "Playfair Display",
+              fontWeight: "bold",
+              marginTop: 40
+            }}
+          >
+            02
+          </p>
+          <p style={{ color: "#FF9090", fontSize: 40, fontWeight: "bold" }}>
+            Radiant Glow Await
+          </p>
+          <p
+            style={{
+              fontFamily: "Playfair Display",
+              fontWeight: "bold",
+              fontSize: 20,
+              color: "#565656"
+            }}
+          >
+            Revitalize your skin and embrace a luminous glow with our premium
+            skincare treatments, discover the secret to radiant beauty at our
+            sanctuary of indulgence
+          </p>
         </div>
-        <div className={styles.locationSearch}>
-          <div className={styles.barreDeRecherche2} />
-          <div className={styles.location}>{`Location `}</div>
+        <div>
+          <img
+            src="assets/img/Vector%20(4).png"
+            style={{ marginRight: "-13px" }}
+          />
         </div>
       </div>
-      <b className={styles.beautyCareAt}>Beauty care at hand.</b>
-      <b className={styles.welcomeToShinyContainer}>
-        <span>
-          <span>Welcome to</span>
-          <span className={styles.span4}>{` `}</span>
-        </span>
-        <span className={styles.shiny}>Shiny</span>
-        <span className={styles.span4}>{` `}</span>
-      </b>
-      <Header
-        connectionLabel="connexion"
-        connectionId="/materialsymbolsperson.svg"
-        showBoutonConnexion
-        showRectangleDiv
-        showBoutonAjouterTablissement
-        rectangleDivVisible
-        showAjouterVotreTablissement
-        propTop="0px"
-        propHeight="53.56%"
-        propWidth="12.06%"
-        propTop1="22.67%"
-        propRight="1.54%"
-        propBottom="23.78%"
-        propLeft="86.4%"
-        propHeight1="100%"
-        propWidth1="100%"
-        propTop2="0%"
-        propRight1="0%"
-        propBottom1="0%"
-        propLeft1="0%"
-        propHeight2="37.76%"
-        propWidth2="44.18%"
-        propTop3="33.4%"
-        propLeft2="31.39%"
-        propHeight3="62.24%"
-        propWidth3="16.3%"
-        propTop4="17.84%"
-        propRight2="77.3%"
-        propBottom2="19.92%"
-        propLeft3="6.39%"
-        propHeight4="53.56%"
-        propWidth4="17.45%"
-        propRight3="15.28%"
-        propBottom3="23.78%"
-        propHeight5="100%"
-        propWidth5="100%"
-        propTop5="0%"
-        propRight4="0%"
-        propBottom4="0%"
-        propLeft4="0%"
-        propHeight6="37.76%"
-        propWidth6="79.51%"
-        propTop6="33.4%"
-        propLeft5="10.03%"
-        onNosServicesTextClick={onNosServicesTextClick}
-        onBoutonConnexionContainerClick={onBoutonConnexionContainerClick}
-        onBoutonAjouterTablissementClick={onBoutonAjouterTablissementClick}
+      <img
+        src="assets/img/Image%20(1).png"
+        style={{ width: 570, height: 467 }}
       />
     </div>
+  </div>
+  <div className="d-flex" style={{ height: 500 }}>
+    <div
+      className="d-flex flex-column justify-content-center"
+      style={{ width: 622, background: "#E8C59759" }}
+    >
+      <div style={{ marginRight: 119, marginLeft: 119, marginTop: 71 }}>
+        <p
+          style={{
+            color: "#FF9090",
+            fontSize: 15,
+            fontFamily: "DM sans-serif"
+          }}
+        >
+          Quote Today
+        </p>
+        <p style={{ fontSize: 25, fontFamily: "Playfair Display" }}>
+          "Every time you create beauty around you, you restore your own soul.
+          So be a great human from the inside and outside. "
+        </p>
+        <p style={{ fontFamily: "DM sans-serif", marginTop: 71 }}>
+          Alice Walker
+        </p>
+        <img
+          src="assets/img/Vector.png"
+          style={{ width: 250, marginLeft: "-119px", marginTop: "-135px" }}
+        />
+      </div>
+    </div>
+    <div
+      style={{
+        background: "url(assets/img/Image%20(2).png)",
+        width: "60%",
+        textAlign: "center"
+      }}
+    >
+      <img
+        src="assets/img/Icon.png"
+        style={{ textAlign: "center", marginTop: 196 }}
+      />
+    </div>
+  </div>
+  <div className="container" style={{ width: "86%", marginTop: 87 }}>
+    <div className="d-xl-flex d-xxl-flex" style={{ width: "initial" }}>
+      <div style={{ width: 531 }}>
+        <p
+          style={{
+            color: "#FF9090",
+            fontFamily: "Playfair Display",
+            fontSize: 50
+          }}
+        >
+          Consult your problem&nbsp; with the experts
+        </p>
+        <p
+          style={{
+            color: "#565656",
+            fontSize: 18,
+            fontFamily: "DM sans-serif",
+            width: 502,
+            lineHeight: "34.74px",
+            letterSpacing: 1
+          }}
+        >
+          Overcome treatment problems by getting free consultations from health
+          experts from various countries that we have provided
+        </p>
+        <button
+          className="btn btn-primary"
+          type="button"
+          style={{
+            background: "#221E42",
+            borderStyle: "none",
+            borderRadius: 0,
+            color: "rgb(255,255,255)",
+            fontFamily: "DM sans-serif",
+            fontWeight: "bold",
+            paddingTop: 8,
+            paddingRight: 32,
+            paddingLeft: 32,
+            paddingBottom: 8,
+            marginTop: 30
+          }}
+        >
+          Consult Now
+        </button>
+      </div>
+      <img
+        className="img-fluid visible"
+        src="assets/img/Vector%201.png"
+        style={{ width: 355, height: 211, marginLeft: 150 }}
+      />
+    </div>
+    <div className="d-flex">
+      <img
+        src="assets/img/Vector%20(1).png"
+        style={{
+          width: 309,
+          height: 284,
+          marginTop: 123,
+          marginLeft: "-51px",
+          marginRight: 170
+        }}
+      />
+      <img src="assets/img/Rectangle%2016.png" style={{ marginTop: "-96px" }} />
+      <div style={{ marginLeft: 64 }}>
+        <img src="assets/img/Image%20(3).png" style={{ marginTop: "-137px" }} />
+        <div
+          className="d-flex justify-content-between align-content-center"
+          style={{ marginTop: 16 }}
+        >
+          <p
+            style={{
+              fontSize: 18,
+              color: "#3A2D32",
+              fontFamily: "DM sans-serif"
+            }}
+          >
+            Solid Black Cream
+          </p>
+          <div className="d-flex align-content-center">
+            <img
+              src="assets/img/star.png"
+              style={{ height: 16, marginTop: 4, marginRight: 8 }}
+            />
+            <p
+              style={{
+                fontFamily: "DM sans-serif",
+                color: "#3A2D32",
+                fontWeight: "bold"
+              }}
+            >
+              4.8
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p
+    style={{
+      color: "#FF9090",
+      fontFamily: "Playfair Display",
+      fontSize: 50,
+      textAlign: "center",
+      marginTop: 130
+    }}
+  >
+    Various Shiny Products
+  </p>
+  <div className="d-flex flex-column align-items-center">
+    <div className="container" style={{ width: "100%" }}>
+      <div className="row">
+        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+          <img src="assets/img/Image%20(4).png" style={{ width: 350 }} />
+          <div className="d-flex justify-content-between">
+            <p
+              style={{
+                color: "#3A2D32",
+                fontWeight: "bold",
+                fontSize: 28,
+                fontFamily: "Playfair Display"
+              }}
+            >
+              Tagea Cream
+            </p>
+            <div className="d-flex">
+              <img
+                width={16}
+                height={16}
+                src="assets/img/star.png"
+                style={{
+                  height: 16,
+                  width: 16,
+                  marginTop: 11,
+                  marginRight: 10
+                }}
+              />
+              <p
+                style={{
+                  fontSize: 20,
+                  fontWeight: "bold",
+                  fontFamily: "DM Sans",
+                  marginTop: 5
+                }}
+              >
+                4.8
+              </p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <div className="d-flex">
+              <p
+                style={{
+                  fontFamily: "DM Sans",
+                  fontWeight: "bold",
+                  textDecoration: "line-through",
+                  marginRight: 16
+                }}
+              >
+                10000 FCFA
+              </p>
+              <p
+                style={{
+                  color: "#FF0000",
+                  fontWeight: "bold",
+                  width: 50,
+                  background: "rgba(255,0,0,0.1)",
+                  borderRadius: 8,
+                  paddingLeft: 8,
+                  paddingRight: 8,
+                  paddingTop: 4,
+                  paddingBottom: 4,
+                  marginTop: "-6px"
+                }}
+              >
+                30%
+              </p>
+            </div>
+            <p
+              style={{
+                color: "#FE9986",
+                fontWeight: "bold",
+                fontFamily: "DM Sans"
+              }}
+            >
+              7000FCFA
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+          <img src="assets/img/Image%20(5).png" style={{ width: 350 }} />
+          <div className="d-flex justify-content-between">
+            <p
+              style={{
+                color: "#3A2D32",
+                fontSize: 28,
+                fontFamily: "Playfair Display",
+                fontWeight: "bold"
+              }}
+            >
+              Solid Black Cream
+            </p>
+            <div className="d-flex">
+              <img
+                src="assets/img/star.png"
+                style={{ height: "16PX", marginTop: 11, marginRight: 10 }}
+              />
+              <p
+                style={{
+                  fontFamily: "DM Sans",
+                  fontWeight: "bold",
+                  fontSize: 20,
+                  marginTop: 5
+                }}
+              >
+                4.8
+              </p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <div className="d-flex">
+              <p
+                style={{
+                  textDecoration: "line-through",
+                  fontWeight: "bold",
+                  fontFamily: "DM Sans",
+                  marginRight: 16
+                }}
+              >
+                10000 FCFA
+              </p>
+              <p
+                style={{
+                  color: "#FF0000",
+                  fontWeight: "bold",
+                  background: "rgba(255,0,0,0.1)",
+                  borderRadius: 8,
+                  width: 50,
+                  paddingLeft: 8,
+                  paddingRight: 8,
+                  paddingTop: 4,
+                  paddingBottom: 4,
+                  marginTop: "-6px"
+                }}
+              >
+                30%
+              </p>
+            </div>
+            <p
+              style={{
+                fontWeight: "bold",
+                color: "#FE9986",
+                fontFamily: "DM Sans"
+              }}
+            >
+              7000FCFA
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4" style={{ width: 350 }}>
+          <img src="assets/img/Image%20(6).png" style={{ width: 350 }} />
+          <div className="d-flex justify-content-between">
+            <p
+              style={{
+                color: "#3A2D32",
+                fontWeight: "bold",
+                fontFamily: "Playfair Display",
+                fontSize: 28
+              }}
+            >
+              Pinky Cream
+            </p>
+            <div className="d-flex">
+              <img
+                src="assets/img/star.png"
+                style={{ height: "16PX", marginTop: 11, marginRight: 10 }}
+              />
+              <p
+                style={{
+                  fontSize: 20,
+                  fontFamily: "DM sans-serif",
+                  fontWeight: "bold",
+                  marginTop: 5
+                }}
+              >
+                4.8
+              </p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <div className="d-flex">
+              <p
+                style={{
+                  textDecoration: "line-through",
+                  fontWeight: "bold",
+                  fontFamily: "DM Sans",
+                  borderRadius: 8,
+                  marginRight: 16
+                }}
+              >
+                10000FCFA
+              </p>
+              <p
+                style={{
+                  color: "#FF0000",
+                  fontWeight: "bold",
+                  background: "rgba(255,0,0,0.1)",
+                  borderRadius: 8,
+                  width: 50,
+                  paddingLeft: 8,
+                  paddingRight: 8,
+                  paddingTop: 4,
+                  paddingBottom: 4,
+                  marginTop: "-6px"
+                }}
+              >
+                30%
+              </p>
+            </div>
+            <p
+              style={{
+                fontWeight: "bold",
+                color: "#FE9986",
+                fontFamily: "DM Sans"
+              }}
+            >
+              7000FCFA
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+          <img src="assets/img/Image%20(7).png" style={{ width: 350 }} />
+          <div className="d-flex justify-content-between">
+            <p
+              style={{
+                color: "#3A2D32",
+                fontSize: "28PX",
+                fontFamily: "Playfair Display",
+                fontWeight: "bold"
+              }}
+            >
+              Navy Cream
+            </p>
+            <div className="d-flex">
+              <img
+                width={100}
+                height={80}
+                src="assets/img/star.png"
+                style={{
+                  width: 16,
+                  height: 16,
+                  marginTop: 11,
+                  marginRight: 10
+                }}
+              />
+              <p
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "DM Sans",
+                  fontSize: 20,
+                  marginTop: 5
+                }}
+              >
+                4.8
+              </p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <div className="d-flex">
+              <p
+                style={{
+                  textDecoration: "line-through",
+                  fontWeight: "bold",
+                  fontFamily: "DM Sans",
+                  marginRight: 16
+                }}
+              >
+                10000FCFA
+              </p>
+              <p
+                style={{
+                  color: "#FF0000",
+                  fontWeight: "bold",
+                  background: "rgba(255,0,0,0.1)",
+                  borderRadius: 8,
+                  width: 50,
+                  paddingRight: 8,
+                  paddingLeft: 8,
+                  paddingBottom: 4,
+                  paddingTop: 4,
+                  marginTop: "-6px"
+                }}
+              >
+                30%
+              </p>
+            </div>
+            <p
+              style={{
+                fontWeight: "bold",
+                color: "#FE9986",
+                fontFamily: "DM Sans"
+              }}
+            >
+              7000FCFA
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+          <img src="assets/img/Image%20(8).png" style={{ width: 350 }} />
+          <div className="d-flex justify-content-between">
+            <p
+              style={{
+                color: "#3A2D32",
+                fontWeight: "bold",
+                fontFamily: "Playfair Display",
+                fontSize: "28PX"
+              }}
+            >
+              Green Light Cream
+            </p>
+            <div className="d-flex">
+              <img
+                src="assets/img/star.png"
+                style={{ height: "16PX", marginTop: 11, marginRight: 10 }}
+              />
+              <p
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "DM Sans",
+                  fontSize: 20,
+                  marginTop: 5
+                }}
+              >
+                4.8
+              </p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <div className="d-flex">
+              <p
+                style={{
+                  fontWeight: "bold",
+                  textDecoration: "line-through",
+                  fontFamily: "DM Sans",
+                  marginRight: 16
+                }}
+              >
+                10000FCFA
+              </p>
+              <p
+                style={{
+                  color: "#FF0000",
+                  fontWeight: "bold",
+                  background: "rgba(255,0,0,0.1)",
+                  borderRadius: 8,
+                  width: 50,
+                  paddingRight: 8,
+                  paddingLeft: 8,
+                  paddingBottom: 4,
+                  paddingTop: 4,
+                  marginTop: "-6px"
+                }}
+              >
+                30%
+              </p>
+            </div>
+            <p
+              style={{
+                color: "#FE9986",
+                fontWeight: "bold",
+                fontFamily: "DM Sans"
+              }}
+            >
+              7000FCA
+            </p>
+          </div>
+        </div>
+        <div className="col-md-4" style={{ width: 350 }}>
+          <img src="assets/img/Image%20(9).png" style={{ width: 350 }} />
+          <div
+            className="d-flex justify-content-between"
+            style={{ marginRight: 16 }}
+          >
+            <p
+              style={{
+                color: "#3A2D32",
+                fontSize: 28,
+                fontFamily: "Playfair Display",
+                fontWeight: "bold"
+              }}
+            >
+              Wash Cream
+            </p>
+            <div className="d-flex">
+              <img
+                src="assets/img/star.png"
+                style={{ height: "16PX", marginTop: 11, marginRight: 10 }}
+              />
+              <p
+                style={{
+                  fontWeight: "bold",
+                  fontFamily: "DM Sans",
+                  fontSize: 20,
+                  marginTop: 5
+                }}
+              >
+                4.8
+              </p>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between">
+            <div className="d-flex">
+              <p
+                style={{
+                  fontWeight: "bold",
+                  textDecoration: "line-through",
+                  fontFamily: "DM Sans",
+                  marginRight: 16
+                }}
+              >
+                10000FCFA
+              </p>
+              <p
+                style={{
+                  color: "#FF0000",
+                  fontWeight: "bold",
+                  background: "rgba(255,0,0,0.1)",
+                  borderRadius: 8,
+                  width: 50,
+                  paddingLeft: 8,
+                  paddingRight: 8,
+                  paddingTop: 4,
+                  paddingBottom: 4,
+                  marginTop: "-6px"
+                }}
+              >
+                30%
+              </p>
+            </div>
+            <p
+              style={{
+                color: "#FE9986",
+                fontWeight: "bold",
+                fontFamily: "DM Sans"
+              }}
+            >
+              7000FCFA
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      className="btn btn-primary"
+      type="button"
+      style={{
+        width: 185,
+        height: 56,
+        borderRadius: 0,
+        borderColor: "#221E42",
+        color: "rgb(0,0,0)",
+        background: "rgb(254,254,254)",
+        marginTop: 40,
+        fontSize: 18,
+        fontFamily: "DM Sans",
+        fontWeight: "bold"
+      }}
+    >
+      See More -&gt;
+    </button>
+  </div>
+  <div
+    className="d-flex justify-content-between align-items-center"
+    style={{ marginTop: 15 }}
+  >
+    <p
+      style={{
+        color: "#FF9090",
+        fontFamily: "Playfair Display",
+        fontSize: 50,
+        width: 685,
+        textAlign: "left",
+        fontWeight: "bold",
+        marginLeft: 163
+      }}
+    >
+      What Customers says about our services and products
+    </p>
+    <img src="assets/img/Vector%20(2).png" />
+  </div>
+  <div>
+    <div className="d-flex">
+      <img
+        src="assets/img/Vector%20(3).png"
+        style={{ height: 260, marginRight: "-49px", marginLeft: 0 }}
+      />
+      <div>
+        <div
+          className="d-flex justify-content-between"
+          style={{ width: 1198, background: "#FFEFD7", marginRight: 121 }}
+        >
+          <div style={{ marginLeft: 120, marginTop: 56 }}>
+            <p
+              style={{
+                color: "#FE9986",
+                fontSize: 64,
+                fontFamily: "Playfair Display",
+                fontWeight: "bold"
+              }}
+            >
+              01 / 04
+            </p>
+            <p
+              style={{
+                fontFamily: "Playfair Display",
+                fontSize: 20,
+                width: 461,
+                lineHeight: "38.6px",
+                textAlign: "left",
+                paddingRight: 90
+              }}
+            >
+              Wow! Very amazing. Thanks for the products from Shiny, I really
+              love using skin products to help me out in the sun! I'm waiting
+              for an amazing nw product ;)
+            </p>
+            <p
+              style={{
+                fontSize: 20,
+                fontFamily: "DM Sans",
+                fontWeight: "bold",
+                marginTop: 40
+              }}
+            >
+              Mirabelle Claudine
+            </p>
+          </div>
+          <img src="assets/img/Rectangle%2026.png" />
+        </div>
+        <div
+          className="d-flex justify-content-between align-items-center"
+          style={{ width: 1198, marginTop: 20 }}
+        >
+          <img
+            className="d-flex justify-content-between"
+            width={100}
+            height={80}
+            src="assets/img/Frame%20115.png"
+            style={{ width: 86, height: 10 }}
+          />
+          <div>
+            <img
+              src="assets/img/arrow-right%20(1).png"
+              style={{ marginRight: 16 }}
+            />
+            <img src="assets/img/arrow-right.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container"
+    style={{
+      width: "100%",
+      height: 651,
+      marginTop: 100,
+      maxWidth: "100%",
+      background: "#221E42"
+    }}
+  >
+    <div className="row">
+      <div
+        className="col-md-6"
+        style={{
+          marginLeft: 125,
+          marginTop: 102,
+          width: 380,
+          marginRight: 144
+        }}
+      >
+        <img src="assets/img/Shiny%20Logo.png" />
+        <p
+          style={{
+            fontFamily: "DM Sans",
+            color: "rgba(255, 255, 255, 0.70)",
+            width: 370,
+            textAlign: "justify",
+            marginTop: 16
+          }}
+        >
+          This ia a company engage in beauty in 2023. This has made more than
+          2023 products every day since its establishment. This is the only
+          beauty company that is the top ranking one in all of Cameroon and
+          Ivory Coast
+        </p>
+        <div className="d-flex" style={{ marginTop: "57.5px" }}>
+          <img
+            src="assets/img/Icon%20(1).png"
+            style={{ height: 24, marginBottom: 24, marginRight: 24 }}
+          />
+          <p style={{ fontFamily: "DM Sans", color: "rgb(255,255,255)" }}>
+            (237) 6 80 46 25 09 - (225) 6 90 46 25 09
+          </p>
+        </div>
+        <div className="d-flex">
+          <img
+            src="assets/img/Icon%20(2).png"
+            style={{ marginBottom: 24, marginRight: 24, width: 24 }}
+          />
+          <p style={{ fontFamily: "DM Sans", color: "rgb(248,248,248)" }}>
+            JFN - HUI Bonamoussadi, Douala
+          </p>
+        </div>
+        <div className="d-flex">
+          <img
+            src="assets/img/Icon%20(3).png"
+            style={{ height: 24, marginRight: 24 }}
+          />
+          <p style={{ fontFamily: "DM Sans", color: "rgb(247,241,241)" }}>
+            info@shiny.com
+          </p>
+        </div>
+      </div>
+      <div
+        className="col-md-6 d-flex justify-content-between"
+        style={{
+          width: 576,
+          color: "#FFFFFFB2",
+          fontFamily: "DM sans-serif",
+          marginTop: 102,
+          borderStyle: "none"
+        }}
+      >
+        <div>
+          <p style={{ color: "white" }}>Menu</p>
+          <p>Home</p>
+          <p>Consultant</p>
+          <p>Product</p>
+          <p>Shop</p>
+          <p>About Us</p>
+        </div>
+        <div>
+          <p style={{ color: "white" }}>Product</p>
+          <p>Skincare</p>
+          <p>Handbody</p>
+          <p>Oil</p>
+          <p>FashWash</p>
+        </div>
+        <div>
+          <p style={{ color: "white" }}>Service</p>
+          <p>order</p>
+          <p>Booked</p>
+          <p>Payment</p>
+          <p>Delivery</p>
+        </div>
+        <div>
+          <p style={{ color: "white" }}>Support</p>
+          <p>Chat Online</p>
+          <p>Call Online</p>
+          <p>Language</p>
+          <p>Copyright</p>
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div
+        className="col-md-12 d-flex justify-content-between align-items-center"
+        style={{
+          color: "#ffffff",
+          fontSize: 14,
+          fontFamily: "DM sans-serif",
+          marginLeft: 125,
+          marginTop: "102.5px",
+          width: "80%"
+        }}
+      >
+        <div className="d-flex justify-content-between" style={{ width: 308 }}>
+          <p>Privacy Policy</p>
+          <p>Sitemap</p>
+          <p>Terms of use</p>
+        </div>
+        <p>© 2021-2022, All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</>
+
   );
 };
 
