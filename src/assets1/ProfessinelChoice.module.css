@@ -1,0 +1,60 @@
+.instituteChild {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 3.22%;
+    right: 0;
+    bottom: -3.22%;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .institute,
+  .uneInstitute {
+    position: absolute;
+    top: 63.18%;
+    left: 14.78%;
+  }
+  .institute {
+    top: -33px;
+    left: 745px;
+    width: 736px;
+    height: 1024px;
+  }
+  .uneInstitute1 {
+    position: absolute;
+    top: 64.65%;
+    left: 50%;
+  }
+  .personnel,
+  .personnelWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 745px;
+    height: 1024px;
+  }
+  .personnelWrapper {
+    top: -33px;
+    cursor: pointer;
+  }
+  .vousTes {
+    position: absolute;
+    top: 324px;
+    left: 416px;
+    font-size: 128px;
+    color: var(--color-whitesmoke-300);
+  }
+  .professinelChoice {
+    position: relative;
+    background-color: var(--font);
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-29xl);
+    color: var(--font);
+    font-family: var(--font-averia-serif-libre);
+  }

@@ -1,0 +1,15 @@
+.ask {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pro-inst{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

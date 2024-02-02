@@ -2,38 +2,19 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Hours from "../components/Hours";
-import styles from "./css/ConfigurationDuPaiement.module.css";
 
 const ConfigurationDuPaiement = () => {
   const navigate = useNavigate();
 
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
 
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
-  const onHeureContainerClick = useCallback(() => {
+  const onReserve = useCallback(() => {
     navigate("/identification");
   }, [navigate]);
 
-  const onAddPrestationContainerClick = useCallback(() => {
-    navigate("/configuration-du-paiement-avec-ajout-de-prestation");
-  }, [navigate]);
 
   return (
     <>
+    <Header />
   <div style={{ marginTop: 50, marginLeft: 85 }}>
     <p
       style={{
@@ -447,8 +428,10 @@ const ConfigurationDuPaiement = () => {
           </optgroup>
         </select>
       </div>
+      <button onClick={onReserve}>Reserver Maintenenant</button>
     </div>
   </div>
+  <Footer />
 </>
 
   );

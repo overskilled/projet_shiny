@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import styles from "./css/InstituteLogin.module.css";
+import "../assets1/csu.css"
 
 const CustomerSignUp = () => {
   const navigate = useNavigate();
@@ -18,33 +18,16 @@ const CustomerSignUp = () => {
     navigate("/desktop-10");
   }, [navigate]);
 
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
+  const signUp = useCallback(() => {
+    navigate("/card");
   }, [navigate]);
 
   return (
     <>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>customer Signup</title>
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
-  />
-  <style
-    dangerouslySetInnerHTML={{
-      __html:
-        "\n        .form-control:focus {\n            border-color: rgba(255, 189, 189, 1);\n            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 189, 189, 1);\n        }\n\n        .form-control {\n            border-radius: 10px;\n        }\n\n        .btn {\n            padding-left: 100px;\n            padding-right: 100px;\n            padding-top: 10px;\n            padding-bottom: 10px;\n            color: white;\n            background-color: rgba(255, 189, 189, 1);\n            border-radius: 15px;\n            transition: background-color 0.3s, color 0.3s;\n            /* Smooth transition for background-color and color */\n        }\n\n        .btn:hover {\n            background-color: rgba(255, 100, 100, 1);\n            color: white;\n        }\n\n        .left-side {\n        background-image: url('./sidder.jpg'); \n        background-size: cover;\n        background-position: center;\n        background-repeat: no-repeat;\n        height: 100vh;  \n    }\n    "
-    }}
-  />
+    <Header />
   <div className="container-fluid">
     <div className="row">
       <div className="col-lg-6 left-side"></div>
-      <div className="spacer" />
       <div className="col-lg-6 right-side">
         <div className="container">
           <div className="card my-5 shadow p-3 mb-5 bg-body rounded">
@@ -120,7 +103,7 @@ const CustomerSignUp = () => {
                 <br />
                 <div className="row">
                   <div className="col-lg-12 text-center">
-                    <button className="btn submit">S’enregistrer</button>
+                    <button onClick={signUp} className="btn1 submit">S’enregistrer</button>
                   </div>
                 </div>
               </form>

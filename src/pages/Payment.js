@@ -2,8 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "./css/Paiement.module.css";
-
+import "../assets1/bootstrap/css/bootstrap.min.css"
 const Paiement = () => {
   const navigate = useNavigate();
 
@@ -32,6 +31,8 @@ const Paiement = () => {
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <main className="page payment-page">
   <section className="clean-block payment-form dark" style={{ height: "auto" }}>
     <div className="container" style={{ height: "auto" }}>
@@ -353,6 +354,8 @@ const Paiement = () => {
     </div>
   </section>
 </main>
+<Footer />
+</>
   );
 };
 

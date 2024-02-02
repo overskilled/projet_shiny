@@ -2,7 +2,6 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "./css/Identification.module.css";
 
 const Identification = () => {
   const navigate = useNavigate();
@@ -23,23 +22,25 @@ const Identification = () => {
     navigate("/professinel-choice");
   }, [navigate]);
 
-  const onPrestationText1Click = useCallback(() => {
-    navigate("/-service-choisi");
+  const onLogin = useCallback(() => {
+    navigate("/login");
   }, [navigate]);
 
-  const onModifierTextClick = useCallback(() => {
+  const onSignUp = useCallback(() => {
+    navigate("/customer-registration");
+  }, [navigate]);
+
+  const onModifier = useCallback(() => {
     navigate("/configuration-du-paiement");
   }, [navigate]);
 
-  const onCrerCompteContainerClick = useCallback(() => {
-    navigate("/custpmer-login");
-  }, [navigate]);
-
-  const onCrerCompteContainer1Click = useCallback(() => {
-    navigate("/identification-russie");
+  const onSup = useCallback(() => {
+    navigate("/choix-service");
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <div className="container" style={{ padding: "5% 10%" }}>
   <h5>Shinny Coiffure</h5>
   <div>
@@ -88,6 +89,7 @@ const Identification = () => {
         </div>
         <div className="col" style={{ display: "flex", justifyContent: "end" }}>
           <button
+            onClick={onSup}
             className="btn btn-primary"
             type="button"
             style={{ background: "none", border: "none", color: "blue" }}
@@ -133,6 +135,7 @@ const Identification = () => {
         </div>
         <div className="col" style={{ display: "flex", justifyContent: "end" }}>
           <button
+            onClick={onModifier}
             className="btn btn-primary"
             type="button"
             style={{ background: "none", border: "none", color: "blue" }}
@@ -158,6 +161,7 @@ const Identification = () => {
       >
         <h1>Je suis Nouveau sur Shiny?</h1>
         <button
+          onClick={onSignUp}
           className="btn btn-primary"
           type="button"
           style={{
@@ -179,8 +183,9 @@ const Identification = () => {
         >
           Ou
         </p>
-        <h1>Je déjà utilisé Shiny?</h1>
+        <h1>J'ai déjà utilisé Shiny?</h1>
         <button
+          onClick={onLogin}
           className="btn btn-primary"
           type="button"
           style={{
@@ -199,7 +204,8 @@ const Identification = () => {
     </div>
   </div>
 </div>
-
+<Footer />
+</>
   );
 };
 

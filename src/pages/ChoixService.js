@@ -1,47 +1,21 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import SearchBarContainer from "../components/SearchBarContainer";
+// import SearchBarContainer from "../components/SearchBarContainer";
 import Footer from "../components/Footer";
-import Service from "../components/Service";
-import styles from "./css/RservationServices.module.css";
+// import Service from "../components/Service";
+
 
 const RservationServices = () => {
   const navigate = useNavigate();
 
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
-  const onBoutonSelectContainerClick = useCallback(() => {
-    navigate("/-service-choisi");
-  }, [navigate]);
-
-  const onBoutonSelectContainer1Click = useCallback(() => {
-    navigate("/-service-choisi");
-  }, [navigate]);
-
-  const onBoutonSelectContainer2Click = useCallback(() => {
-    navigate("/-service-choisi");
-  }, [navigate]);
-
-  const onBoutonSelectContainer3Click = useCallback(() => {
-    navigate("/-service-choisi");
+  const onSelect = useCallback(() => {
+    navigate("/configuration-du-paiement");
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <div className="container">
   <div className="row justify-content-between my-5">
     <div className="col-auto">
@@ -155,7 +129,7 @@ const RservationServices = () => {
                 </td>
                 <td>1000FCFA</td>
                 <td>
-                  <button className="btn2 p-2">Choisir</button>
+                  <button onClick={onSelect} className="btn2 p-2">Choisir</button>
                 </td>
               </tr>
               <tr>
@@ -164,7 +138,7 @@ const RservationServices = () => {
                 </td>
                 <td>5000FCFA</td>
                 <td>
-                  <button className="btn2 p-2">Choisir</button>
+                  <button onClick={onSelect} className="btn2 p-2">Choisir</button>
                 </td>
               </tr>
             </tbody>
@@ -349,7 +323,8 @@ const RservationServices = () => {
   </div>
   <div id="new-projects" />
 </div>
-
+<Footer />
+</>
   );
 };
 

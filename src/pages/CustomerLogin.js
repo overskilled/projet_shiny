@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import styles from "./css/CustomerLogin.module.css";
 
 const CustomerLogin = () => {
   const navigate = useNavigate();
@@ -18,11 +17,13 @@ const CustomerLogin = () => {
     navigate("/desktop-10");
   }, [navigate]);
 
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
+  const onLogin = useCallback(() => {
+    navigate("/card");
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <div
   id="container"
   style={{
@@ -91,6 +92,7 @@ const CustomerLogin = () => {
         </span>
       </p>
       <input
+        onClick={onLogin}
         className="btn btn-primary"
         type="submit"
         defaultValue="se connecter"
@@ -181,7 +183,7 @@ const CustomerLogin = () => {
     </div>
   </div>
 </div>
-
+</>
   );
 };
 

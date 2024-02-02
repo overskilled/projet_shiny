@@ -1,47 +1,20 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import SearchBarContainer from "../components/SearchBarContainer";
+// import SearchBarContainer from "../components/SearchBarContainer";
 import Footer from "../components/Footer";
-import Service from "../components/Service";
-import styles from "./css/RservationServices.module.css";
+// import Service from "../components/Service";
 
 const RservationServices = () => {
   const navigate = useNavigate();
-
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
-  const onBoutonSelectContainerClick = useCallback(() => {
-    navigate("/-service-choisi");
-  }, [navigate]);
-
-  const onBoutonSelectContainer1Click = useCallback(() => {
-    navigate("/-service-choisi");
-  }, [navigate]);
-
-  const onBoutonSelectContainer2Click = useCallback(() => {
-    navigate("/-service-choisi");
-  }, [navigate]);
-
-  const onBoutonSelectContainer3Click = useCallback(() => {
-    navigate("/-service-choisi");
+  
+  const onchoice = useCallback(() => {
+    navigate("/choix-service");
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <div className="container">
   <div className="row my-5">
     <div className="col text-center mx-auto">
@@ -138,7 +111,7 @@ const RservationServices = () => {
             </div>
             <div className="spacer" />
             <div className="col-auto align-self-end">
-              <button className="btn3">Prendre RDV</button>
+              <button onClick={onchoice} className="btn3">Prendre RDV</button>
             </div>
           </div>
         </div>
@@ -199,7 +172,7 @@ const RservationServices = () => {
             </div>
             <div className="spacer" />
             <div className="col-auto align-self-end">
-              <button className="btn3">Prendre RDV</button>
+              <button onClick={onchoice} className="btn3">Prendre RDV</button>
             </div>
           </div>
         </div>
@@ -207,7 +180,8 @@ const RservationServices = () => {
     </div>
   </div>
 </div>
-
+<Footer />
+</>
   );
 };
 

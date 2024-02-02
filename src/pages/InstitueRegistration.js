@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import styles from "./css/InstituteLogin.module.css";
 
 const InstituteRegistration = () => {
   const navigate = useNavigate();
@@ -23,6 +22,8 @@ const InstituteRegistration = () => {
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <main className="page registration-page">
   <section
     style={{
@@ -411,7 +412,7 @@ const InstituteRegistration = () => {
     </div>
   </section>
 </main>
-
+</>
   );
 };
 

@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import styles from "./css/ProfessionelLogin.module.css";
 
 const ProRegistration = () => {
   const navigate = useNavigate();
@@ -23,6 +22,8 @@ const ProRegistration = () => {
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <main className="page registration-page">
   <section
     style={{
@@ -82,7 +83,7 @@ const ProRegistration = () => {
               }}
             >
               <br />
-              Vous êtes gérant d’un établissement de beauté ?<br />
+              Vous êtes un professionnel de beauté ?<br />
               Un de nos experts vous contactera. Remplissez correctement le
               formulaire
               <br />
@@ -376,7 +377,7 @@ const ProRegistration = () => {
     </div>
   </section>
 </main>
-
+</>
   );
 };
 

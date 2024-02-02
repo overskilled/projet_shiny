@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "./css/Paiement.module.css";
+import "../assets1/bootstrap/css/bootstrap.min.css"
 
 const Card = () => {
   const navigate = useNavigate();
@@ -27,11 +27,13 @@ const Card = () => {
     navigate("/paiement-others");
   }, [navigate]);
 
-  const onFactureTextClick = useCallback(() => {
-    navigate("/identification-russie");
+  const onPay = useCallback(() => {
+    navigate("/paiement");
   }, [navigate]);
 
   return (
+    <>
+    <Header />
     <main className="page shopping-cart-page">
   <section className="clean-block clean-cart dark">
     <div className="container">
@@ -178,9 +180,9 @@ const Card = () => {
                 <span className="price">$360</span>
               </h4>
               <a
+                onClick={onPay}
                 className="btn btn-primary btn-lg active d-block w-100"
                 role="button"
-                href="payment-page.html"
               >
                 Checkout
               </a>
@@ -191,6 +193,8 @@ const Card = () => {
     </div>
   </section>
 </main>
+<Footer />
+    </>
 
   );
 };
