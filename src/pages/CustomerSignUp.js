@@ -29,7 +29,9 @@ const CustomerSignUp = () => {
       <Header />
       <div className="container-fluid">
         <div className="row">
+          
           <div className="col-lg-6 left-side d-none d-lg-block"></div>
+
           <div className="col-lg-6 right-side">
             <div className="container">
               <div className="card my-5 shadow p-3 mb-5 bg-body rounded">
