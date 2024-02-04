@@ -48,7 +48,6 @@ const CustomerLogin = () => {
 
   return (
     <>
-      <Header />
       <div className="container-fluid">
 
         <div className="row">
@@ -57,6 +56,7 @@ const CustomerLogin = () => {
 
           <div className="col d-flex flex-column  vh-100 vh-100-mobile justify-content-center">
             <div className="card form-container shadow p-3 mb-5 bg-white rounded">
+
               <h3 className="text-center">Vous avez déjà utilisez <span style={{ color: "pink" }}>Shiny</span>?</h3>
               <br />
               <form action="">
@@ -142,7 +142,9 @@ const CustomerLogin = () => {
                     </div>
                   </div>
                 </div>
+
               </form>
+              
             </div>
           </div>
         </div >
