@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 // import Products from "../components/Products";
 import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 
 const Acceuil = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Acceuil = () => {
 
   return (
     <>
-    <Header />
+    <Navbar />
   <section className="py-4 py-xl-5" style={{ background: "var(--bs-success)" }}>
     <div className="container d-flex justify-content-between">
       <div style={{ paddingTop: 70, width: 700 }}>

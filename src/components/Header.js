@@ -36,14 +36,15 @@ const Header = () => {
         background: "var(--bs-success)",
         width: "initial",
         maxWidth: "100%",
-        height: 100,
-        paddingTop: 25
+        height: 70,
+        paddingTop: 20,
+        alignItems: "center"
         }}
     >
         <img
         onClick={() => navigate("/")}
-        src="assets/img/Shiny%20Logo.png"
-        style={{ width: 100, minWidth: 41, height: 50, cursor:"pointer"}}
+        src="assets/img/logo.png"
+        style={{ width: 200, minWidth: 41, height: 200, cursor:"pointer", marginTop: -25}}
         />
         <div
         className="d-flex justify-content-between"
@@ -51,7 +52,6 @@ const Header = () => {
             fontSize: 15,
             fontFamily: "arial",
             fontWeight: "bold",
-            paddingTop: 11,
             width: 600
         }}
         >
@@ -61,7 +61,7 @@ const Header = () => {
         <p onClick={() => navigate("/reservation-services")} style={{cursor: "pointer"}}>Institut de beauté</p>
         <p onClick={() => navigate("/reservation-services")} style={{cursor: "pointer"}}>Institut de massage</p>
         </div>
-        <div className="d-flex justify-content-between" style={{ width: 450 }}>
+        <div className="d-flex justify-content-between" style={{ width: 450, marginTop: -20 }}>
         <button
             onClick={() => navigate("/choice")}
             className="btn btn-primary"
@@ -71,11 +71,12 @@ const Header = () => {
             borderColor: "var(--bs-secondary)",
             borderRadius: 40,
             fontFamily: "arial",
-            fontSize: 15,
+            fontSize: 12,
             fontWeight: "bold",
             color: "rgb(255,255,255)",
-            width: 251,
-            height: 48
+            width: 200,
+            height: 35,
+            marginLeft: 50
             }}
         >
             Ajouter un établissement
@@ -88,15 +89,14 @@ const Header = () => {
             background: "var(--bs-secondary)",
             borderColor: "var(--bs-secondary)",
             borderRadius: 40,
-            fontSize: 15,
+            fontSize: 12,
             fontFamily: "arial",
             color: "rgb(255,255,255)",
             fontWeight: "bold",
-            height: 48,
+            height: 35,
             width: 174
-            }}
+            }}  
         >
-            <img src="assets/img/material-symbols_person.png" />
             Connexion
         </button>
         </div>
