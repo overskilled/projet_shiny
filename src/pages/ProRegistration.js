@@ -26,12 +26,35 @@ const ProRegistration = () => {
       <Header />
 
 
-      <div className="container">
+      <div className="container-fluid">
 
         <div className="row">
+          <div className="col-lg-6 left-side-pro d-flex flex-column  vh-100 vh-100-mobile justify-content-center">
+            <div className="card form-container shadow p-3 mb-5 bg-white rounded">
+              <p className="text-center justify-content-center" >Vous êtes gérant d’un établissement beauté ?</p>
+              <p className="text-center justify-content-center" >Un de nos experts vous recontacte</p>
 
+              <form action="">
+                <div className="name">
+                  <fieldset className="p-2">Nom de l'institute *</fieldset>
+                  <div className="d-flex ">
+                    <input
+                      type="text"
+                      className="form-control mr-3 "
+                      placeholder="Prénom.."
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            left side
+          </div>
+
+          <div className="col-lg-6 right-side">
+            right side
+          </div>
         </div>
-        
+
       </div>
 
 

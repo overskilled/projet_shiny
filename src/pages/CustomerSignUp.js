@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import Telephone from "../components/Telephone";
 import Header from "../components/Header";
 import "../assets1/csu.css";
-import "./css/CustomerLogin.css";
 
 const CustomerSignUp = () => {
   const navigate = useNavigate();
@@ -32,11 +31,11 @@ const CustomerSignUp = () => {
 
           <div className="col-lg-6 left-side d-none d-lg-block"></div>
 
-          <div className="col d-flex flex-column  vh-100 vh-100-mobile justify-content-center fixed">
+          <div className="col right-side d-flex flex-column  vh-100 vh-100-mobile justify-content-center">
             <div className="card form-container shadow p-3 mb-5 bg-white rounded">
 
-              <p className="text-center">
-                Réjoinez nous et bénéficiez des milliers soins ou et quand vous
+              <p className="text-center justify-content-center" style={{ fontSize: 20 }}>
+                <span style={{ color: "pink" }}>Réjoinez nous</span> et bénéficiez des milliers soins ou et quand vous
                 le souhaitez.
               </p>
               <br />

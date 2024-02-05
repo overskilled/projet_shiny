@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
-import "../assets1/choice.css"
+import "../assets1/choice.css";
 
 const Choice = () => {
   const navigate = useNavigate();
@@ -16,8 +16,11 @@ const Choice = () => {
 
   return (
     <>
-      <Header />
       <div className="container d-flex justify-content-center align-items-center vh-100">
+        <div className="graphic">
+        <div className="graphic">
+        </div>
+        </div>
         <section class="cards">
 
           <article class="card card--1" onClick={onPro}>
@@ -35,9 +38,9 @@ const Choice = () => {
           </article>
 
 
-          <article class="card card--2" onClick={onInstitute}>
+          <article class="card card--2" onClick={onInstitute} style={{ width: "100%" }}>
             <div class="card__info-hover">
-              
+
 
             </div>
             <div class="card__img"></div>

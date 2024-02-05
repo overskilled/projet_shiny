@@ -105,7 +105,7 @@ const ConfigurationDuPaiement = () => {
           style={{ marginRight: 31, marginLeft: 31, marginTop: 25 }}
         >
           <p style={{ fontSize: 24, fontFamily: "arial" }}>
-            Coupe Garçon - 14 ans
+            Massage normal
           </p>
           <p style={{ fontSize: 18, color: "#058BFB", fontFamily: "arial" }}>
             Supprimer&nbsp;
@@ -170,7 +170,7 @@ const ConfigurationDuPaiement = () => {
                     marginTop: 0
                   }}
                 >
-                  S
+                  X
                 </p>
               </div>
               <p
@@ -182,7 +182,7 @@ const ConfigurationDuPaiement = () => {
                   fontFamily: "arial"
                 }}
               >
-                Samuel
+                Xavier
               </p>
             </div>
             <div
@@ -219,7 +219,7 @@ const ConfigurationDuPaiement = () => {
                     marginTop: 0
                   }}
                 >
-                  S
+                  V
                 </p>
               </div>
               <p
@@ -231,7 +231,7 @@ const ConfigurationDuPaiement = () => {
                   fontFamily: "arial"
                 }}
               >
-                Samuel
+                Vladimir
               </p>
             </div>
             <div

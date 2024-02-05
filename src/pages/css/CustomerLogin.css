@@ -36,6 +36,20 @@
 
     @media screen and (max-width: 768px) {
         width: 50px;
+        padding-right: 5px;
+    }
+}
+
+.btn.btn-custom.btn-equal-size:hover {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    background-color: #000;
+    color: #ffff;
+
+    @media screen and (max-width: 768px) {
+        width: 50px;
+        padding-right: 5px;
     }
 }
 
