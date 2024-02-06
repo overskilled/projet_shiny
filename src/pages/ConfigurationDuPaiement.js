@@ -152,8 +152,6 @@ const ConfigurationDuPaiement = () => {
                   <span style={{fontWeight: 400}}>Samuel</span>
               </div>
               <input type="radio" className="radio" />
-            </div>
-
             <div className="col-md-4 d-flex justify-content-between align-items-center with">
               <div className="d-flex align-items-center">
                 <div className="id">
@@ -318,7 +316,7 @@ const ConfigurationDuPaiement = () => {
   </div>
   <Footer />
 </div>
-
+</div>
   );
 };
 

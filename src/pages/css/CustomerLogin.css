@@ -1,0 +1,107 @@
+.link-register {
+    text-decoration: none;
+    color: black;
+}
+
+.link-register:hover {
+    color: rgba(255, 189, 189, 1);
+    text-decoration: underline;
+}
+
+.separator-line {
+    border: none;
+    border-top: 2px solid #000;
+    /* Adjust the color and thickness as needed */
+}
+
+.separator-text {
+    /* Adjust this value to position the text properly */
+    padding: 0 10px;
+    color: #000;
+    /* Text color */
+    font-weight: bold;
+    font-size: large;
+    /* Adjust font weight as needed */
+}
+
+.registration-btn {
+    text-align: center;
+    font-size: larger;
+}
+
+.btn.btn-custom.btn-equal-size {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+
+    @media screen and (max-width: 768px) {
+        width: 50px;
+        padding-right: 5px;
+    }
+}
+
+.btn.btn-custom.btn-equal-size:hover {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    background-color: #000;
+    color: #ffff;
+
+    @media screen and (max-width: 768px) {
+        width: 50px;
+        padding-right: 5px;
+    }
+}
+
+
+.btn .logo {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.button-text {
+    padding: 2px;
+    font-size: large;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.others {
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.card.form-container {
+    border-radius: 10px;
+}
+
+
+.vh-100 {
+    height: 100vh;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .col.d-flex.flex-column {
+        background-image: url('sidder.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}

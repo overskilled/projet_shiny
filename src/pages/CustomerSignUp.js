@@ -1,7 +1,8 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import "../assets1/csu.css"
+import Telephone from "../components/Telephone";
+import Header from "../components/Header";
 
 const CustomerSignUp = () => {
   const navigate = useNavigate();
@@ -12,15 +13,16 @@ const CustomerSignUp = () => {
   return (
     <>
     <Navbar />
-  <div className="container-fluid" style={{marginTop: 100}}>
-    <div className="row">
-      <div className="col-lg-6 left-side"></div>
-      <div className="col-lg-6 right-side">
-        <div className="container">
-          <div className="card my-5 shadow p-3 mb-5 bg-body rounded">
-            <div className="card-body my-5 ">
-              <p className="text-center">
-                Réjoinez nous et bénéficiez des milliers soins ou et quand vous
+      <div className="container-fluid">
+        <div className="row">
+
+          <div className="col-lg-6 left-side d-none d-lg-block"></div>
+
+          <div className="col right-side d-flex flex-column  vh-100 vh-100-mobile justify-content-center">
+            <div className="card form-container shadow p-3 mb-5 bg-white rounded">
+
+              <p className="text-center justify-content-center" style={{ fontSize: 20 }}>
+                <span style={{ color: "pink" }}>Réjoinez nous</span> et bénéficiez des milliers soins ou et quand vous
                 le souhaitez.
               </p>
               <br />
@@ -50,19 +52,11 @@ const CustomerSignUp = () => {
                       placeholder="Enter votre email.."
                     />
                   </div>
-                  <div className="col-lg-6 col-md-12 mt-3 mt-md-0">
-                    <fieldset className="p-2">Telephone*</fieldset>
-                    <div className="input-group">
-                      <input type="tel" id="phone" className="form-control" />
-                    </div>
-                  </div>
-                  {/* Include jQuery (Required) */}
-                  {/* Include intlTelInput JS */}
-                  {/* Include intlTelInput utils JS */}
+                  <Telephone />
                 </div>
                 <br />
                 <div className="address">
-                  <fieldset className="p-2">Adress *</fieldset>
+                  <fieldset className="">Adress *</fieldset>
                   <input
                     type="text"
                     className="form-control"
@@ -70,14 +64,14 @@ const CustomerSignUp = () => {
                   />
                   <br />
                   <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 p-2">
                       <input
                         type="text"
                         className="form-control"
                         placeholder="Regions, ville.."
                       />
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 p-2">
                       <input
                         type="text"
                         className="form-control"
@@ -98,9 +92,8 @@ const CustomerSignUp = () => {
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</>
+
+    </>
 
 
   );
