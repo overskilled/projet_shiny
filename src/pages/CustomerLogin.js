@@ -13,6 +13,7 @@ import './css/CustomerLogin.css';
 
 //Components 
 import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 
 
 const CustomerLogin = () => {
@@ -48,6 +49,7 @@ const CustomerLogin = () => {
 
   return (
     <>
+    <Navbar />
       <div className="container-fluid">
 
         <div className="row">

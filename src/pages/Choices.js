@@ -15,6 +15,8 @@ const Choice = () => {
   }, [navigate]);
 
   return (
+    <>
+    <Navbar />
     <div className="choice">
       <div className="container d-flex justify-content-center align-items-center vh-100">
         <div className="graphic">
@@ -59,6 +61,7 @@ const Choice = () => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 

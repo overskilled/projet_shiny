@@ -17,7 +17,7 @@ const RservationServices = () => {
 
   return (
     <div className="">
-      <Header />
+      <Navbar />
       <div className="container">
         <div className="row justify-content-between my-5">
           <div className="col-auto">
