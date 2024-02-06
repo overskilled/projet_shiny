@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import "../assets1/choice.css"
 
 const Choice = () => {
@@ -16,7 +16,7 @@ const Choice = () => {
 
   return (
     <>
-    <Header />
+    <Navbar />
     <div className="ask">
       <p style={{fontSize: 70, fontWeight: 800}}>Vous êtes ?</p>
       <div className="pro-inst">

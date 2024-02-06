@@ -1,21 +1,9 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 
 const CustomerLogin = () => {
   const navigate = useNavigate();
-
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
 
   const onLogin = useCallback(() => {
     navigate("/card");
@@ -23,13 +11,14 @@ const CustomerLogin = () => {
 
   return (
     <>
-    <Header />
+    <Navbar />
     <div
   id="container"
   style={{
     display: "grid",
     gridTemplateColumns: "repeat(5, 1fr)",
-    height: "100vh"
+    height: "100vh",
+    marginTop: 80
   }}
 >
   <div

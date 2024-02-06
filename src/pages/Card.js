@@ -1,31 +1,11 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 import "../assets1/bootstrap/css/bootstrap.min.css"
 
 const Card = () => {
   const navigate = useNavigate();
-
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
-  const onAddPaymentMethodClick = useCallback(() => {
-    navigate("/paiement-others");
-  }, [navigate]);
 
   const onPay = useCallback(() => {
     navigate("/paiement");
@@ -33,16 +13,15 @@ const Card = () => {
 
   return (
     <>
-    <Header />
+    <Navbar />
     <main className="page shopping-cart-page">
   <section className="clean-block clean-cart dark">
     <div className="container">
       <div className="block-heading">
-        <h2 className="text-info">Paiement</h2>
+        <h2 style={{color: "#FC8D8D", marginTop: 40}}>Panier</h2>
         <p>
-          Bienvenue dans l'univers passionnant&nbsp; de Shiny ! Notre équipe
-          dévouée travaille sans relâche pour vous offrir une expérience
-          exceptionnelle.&nbsp;
+          Bienvenue dans votre panier. Vous retrouverez ici tout les articles que vous 
+          avez ajouté dans votre panier ainsi que leurs prix et le prix total.
         </p>
       </div>
       <div className="content">
@@ -60,9 +39,9 @@ const Card = () => {
                     </div>
                   </div>
                   <div className="col-md-5 product-info">
-                    <a className="product-name" href="#">
-                      Coiffure Enfant
-                    </a>
+                    <p className="product-name" style={{color: "#221E42"}}>
+                      <u>Coiffure Enfant</u>
+                    </p>
                     <div className="product-specs">
                       <div />
                       <div />
@@ -74,7 +53,7 @@ const Card = () => {
                       className="form-label d-none d-md-block"
                       htmlFor="quantity"
                     >
-                      Quantity
+                      Quantité
                     </label>
                     <input
                       type="number"
@@ -84,7 +63,7 @@ const Card = () => {
                     />
                   </div>
                   <div className="col-6 col-md-2 price">
-                    <span>$120</span>
+                    <span>3000 XAF</span>
                   </div>
                 </div>
               </div>
@@ -99,9 +78,9 @@ const Card = () => {
                     </div>
                   </div>
                   <div className="col-md-5 product-info">
-                    <a className="product-name" href="#">
-                      Coiffure Homme
-                    </a>
+                    <p className="product-name" style={{color: "#221E42"}}>
+                      <u>Coiffure Homme</u>
+                    </p>
                     <div className="product-specs" />
                   </div>
                   <div className="col-6 col-md-2 quantity">
@@ -109,7 +88,7 @@ const Card = () => {
                       className="form-label d-none d-md-block"
                       htmlFor="quantity"
                     >
-                      Quantity
+                      Quantité
                     </label>
                     <input
                       type="number"
@@ -119,7 +98,7 @@ const Card = () => {
                     />
                   </div>
                   <div className="col-6 col-md-2 price">
-                    <span>$120</span>
+                    <span>2000 XAF</span>
                   </div>
                 </div>
               </div>
@@ -134,9 +113,9 @@ const Card = () => {
                     </div>
                   </div>
                   <div className="col-md-5 product-info">
-                    <a className="product-name" href="#">
-                      Coiffure Femme
-                    </a>
+                    <p className="product-name" style={{color: "#221E42"}}>
+                      <u>Coiffure Femme</u>
+                    </p>
                     <div className="product-specs" />
                   </div>
                   <div className="col-6 col-md-2 quantity">
@@ -144,7 +123,7 @@ const Card = () => {
                       className="form-label d-none d-md-block"
                       htmlFor="quantity"
                     >
-                      Quantity
+                      Quantité
                     </label>
                     <input
                       type="number"
@@ -154,37 +133,34 @@ const Card = () => {
                     />
                   </div>
                   <div className="col-6 col-md-2 price">
-                    <span>$120</span>
+                    <span>5000 XAF</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-12 col-lg-4">
-            <div className="summary">
-              <h3>Summary</h3>
+            <div className="summary" style={{background: "#fdeaeada"}}>
+              <h3>FACTURE</h3>
               <h4>
                 <span className="text">Subtotal</span>
-                <span className="price">$360</span>
+                <span className="price">10000 XAF</span>
               </h4>
               <h4>
                 <span className="text">Discount</span>
-                <span className="price">$0</span>
-              </h4>
-              <h4>
-                <span className="text">Shipping</span>
-                <span className="price">$0</span>
+                <span className="price">0 XAF</span>
               </h4>
               <h4>
                 <span className="text">Total</span>
-                <span className="price">$360</span>
+                <span className="price">10000 XAF</span>
               </h4>
               <a
                 onClick={onPay}
                 className="btn btn-primary btn-lg active d-block w-100"
                 role="button"
+                style={{background: "#FC8D8D", border: "#FC8D8D"}}
               >
-                Checkout
+                Payer
               </a>
             </div>
           </div>

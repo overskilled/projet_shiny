@@ -1,29 +1,12 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 
 const InstituteRegistration = () => {
-  const navigate = useNavigate();
-
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
+  // const navigate = useNavigate();
   return (
     <>
-    <Header />
+    <Navbar />
     <main className="page registration-page">
   <section
     style={{

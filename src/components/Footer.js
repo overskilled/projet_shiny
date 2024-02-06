@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import "../assets1/footer.css"
 
 const Footer = () => {
 //   const navigate = useNavigate();
@@ -34,7 +35,6 @@ const Footer = () => {
     className="container"
     style={{
       width: "100%",
-      height: 651,
       marginTop: 100,
       maxWidth: "100%",
       background: "#221E42"
@@ -42,9 +42,8 @@ const Footer = () => {
   >
     <div className="row">
       <div
-        className="col-md-6"
+        className="col-md-6 infos"
         style={{
-          marginLeft: 125,
           marginTop: 102,
           width: 380,
           marginRight: 144
@@ -55,7 +54,7 @@ const Footer = () => {
           style={{
             fontFamily: "DM Sans",
             color: "rgba(255, 255, 255, 0.70)",
-            width: 370,
+            width: "90%",
             textAlign: "justify",
             marginTop: 16
           }}
@@ -65,21 +64,21 @@ const Footer = () => {
           beauty company that is the top ranking one in all of Cameroon and
           Ivory Coast
         </p>
-        <div className="d-flex" style={{ marginTop: "57.5px" }}>
+        <div className="d-flex" style={{ marginTop: "57.5px", width: "90%" }}>
           <img
             src="assets/img/Icon%20(1).png"
             style={{ height: 24, marginBottom: 24, marginRight: 24 }}
           />
-          <p style={{ fontFamily: "DM Sans", color: "rgb(255,255,255)" }}>
+          <p style={{ fontFamily: "DM Sans", color: "rgb(255,255,255)", fontSize: "90%" }}>
             (237) 6 80 46 25 09 - (225) 6 90 46 25 09
           </p>
         </div>
-        <div className="d-flex">
+        <div className="d-flex" style={{width: "90%"}}>
           <img
             src="assets/img/Icon%20(2).png"
             style={{ marginBottom: 24, marginRight: 24, width: 24 }}
           />
-          <p style={{ fontFamily: "DM Sans", color: "rgb(248,248,248)" }}>
+          <p style={{ fontFamily: "DM Sans", color: "rgb(248,248,248)", fontSize: "90%" }}>
             JFN - HUI Bonamoussadi, Douala
           </p>
         </div>
@@ -88,7 +87,7 @@ const Footer = () => {
             src="assets/img/Icon%20(3).png"
             style={{ height: 24, marginRight: 24 }}
           />
-          <p style={{ fontFamily: "DM Sans", color: "rgb(247,241,241)" }}>
+          <p style={{ fontFamily: "DM Sans", color: "rgb(247,241,241)", fontSize: "90%" }}>
             info@shiny.com
           </p>
         </div>
@@ -103,7 +102,7 @@ const Footer = () => {
           borderStyle: "none"
         }}
       >
-        <div>
+        <div >
           <p style={{ color: "white" }}>Menu</p>
           <p>Home</p>
           <p>Consultant</p>
@@ -134,19 +133,18 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    <div className="row">
+    <div className="row align-items-center">
       <div
-        className="col-md-12 d-flex justify-content-between align-items-center"
+        className="col-md-12 d-flex justify-content-between align-items-center test"
         style={{
           color: "#ffffff",
           fontSize: 14,
           fontFamily: "DM sans-serif",
-          marginLeft: 125,
           marginTop: "102.5px",
           width: "80%"
         }}
       >
-        <div className="d-flex justify-content-between" style={{ width: 308 }}>
+        <div className="policies" style={{ width: 308 }}>
           <p>Privacy Policy</p>
           <p>Sitemap</p>
           <p>Terms of use</p>

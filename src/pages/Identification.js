@@ -1,27 +1,10 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 
 const Identification = () => {
   const navigate = useNavigate();
-
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
   const onLogin = useCallback(() => {
     navigate("/login");
   }, [navigate]);
@@ -40,7 +23,7 @@ const Identification = () => {
 
   return (
     <>
-    <Header />
+    <Navbar />
     <div className="container" style={{ padding: "5% 10%" }}>
   <h5>Shinny Coiffure</h5>
   <div>

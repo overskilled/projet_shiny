@@ -8,9 +8,11 @@ export const Nav = styled.nav`
 	background: #FADCDC;
 	height: 85px;
 	width: 100%;
+	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	z-index: 12;
+	top: 0;
 	/* Third Nav */
 	/* justify-content: flex-start; */
 `;

@@ -9,15 +9,19 @@ import {
 	NavBtn,
 	NavBtnLink,
 } from "./NavbarElements";
+import "../../assets1/csu.css"
 
 const Navbar = () => {
 	return (
 		<>
 			<Nav>
-                <img
-                    src="assets/img/logo.png"
-                    style={{ width: 200, minWidth: 41, height: 200, cursor:"pointer", marginTop: -60}}
-                />
+				<NavLink to="/">
+					<img
+						className="logo"
+						src="assets/img/logo.png"
+						style={{ width: 200, minWidth: 41, height: 200, cursor:"pointer"}}
+					/>
+				</NavLink>
 				<Bars />
 
 				<NavMenu>
@@ -40,10 +44,10 @@ const Navbar = () => {
 					{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 				</NavMenu>
 				<NavBtn>
-					<NavBtnLink to="/signin">
+					<NavBtnLink to="/choice">
 						Ajouter un établissement
 					</NavBtnLink>
-					<NavBtnLink to="/signin">
+					<NavBtnLink to="/login">
 						Connexion
 					</NavBtnLink>
 				</NavBtn>

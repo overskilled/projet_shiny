@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 // import Coupon from "../components/Coupon";
 import "../assets1/bootstrap.min.css"
@@ -8,33 +8,9 @@ import "../assets1/bootstrap.min.css"
 const IdentificationReussi = () => {
   const navigate = useNavigate();
 
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
-  const onModifierTextClick = useCallback(() => {
-    navigate("/configuration-du-paiement");
-  }, [navigate]);
-
-  const onPlace = useCallback(() => {
-    navigate("/paiement");
-  }, [navigate]);
-
   return (
     <>
-    <Header /> 
+    <Navbar /> 
     <div style={{ padding: 20 }}>
       <a href="#" style={{ fontSize: 24, textDecoration: "none" }}>
         Modifier

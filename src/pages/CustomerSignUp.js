@@ -1,31 +1,18 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import "../assets1/csu.css"
 
 const CustomerSignUp = () => {
   const navigate = useNavigate();
-
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onShinyLogoTextClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
   const signUp = useCallback(() => {
     navigate("/card");
   }, [navigate]);
 
   return (
     <>
-    <Header />
-  <div className="container-fluid">
+    <Navbar />
+  <div className="container-fluid" style={{marginTop: 100}}>
     <div className="row">
       <div className="col-lg-6 left-side"></div>
       <div className="col-lg-6 right-side">

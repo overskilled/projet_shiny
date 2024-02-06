@@ -1,7 +1,8 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
+import "../assets1/cdp.css"
 
 const ConfigurationDuPaiement = () => {
   const navigate = useNavigate();
@@ -13,20 +14,20 @@ const ConfigurationDuPaiement = () => {
 
 
   return (
-    <>
-    <Header />
-  <div style={{ marginTop: 50, marginLeft: 85 }}>
+    <div className="config">
+    <Navbar />
+  <div className="company" style={{ paddingTop: 100}}>
     <p
       style={{
         color: "rgb(0,0,0)",
-        fontSize: 24,
+        fontSize: "120%",
         fontFamily: "arial",
-        fontWeight: "bold"
+        fontWeight: 500
       }}
     >
       Shiny Coiffure
     </p>
-    <div className="d-flex" style={{ marginTop: "-13px" }}>
+    <div className="none" style={{ marginTop: "-13px" }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -78,286 +79,136 @@ const ConfigurationDuPaiement = () => {
     </div>
   </div>
   <div
-    className="d-xl-flex d-xxl-flex justify-content-between"
-    style={{ marginLeft: 85, marginRight: 85, marginTop: 31 }}
+    className="cb"
+    style={{ marginTop: 25 }}
   >
-    <div style={{ width: "60%", marginRight: 100 }}>
+    <div style={{ width: "100%", marginRight: 100 }}>
       <p
         style={{
           color: "rgb(0,0,0)",
-          fontSize: 20,
+          fontSize: "100%",
           fontFamily: "arial",
-          fontWeight: "bold"
+          fontWeight: 500
         }}
       >
         1. Prestation sélectionné
       </p>
       <div
+      className="card-box"
         style={{
           width: "100%",
           marginTop: 18,
-          borderRadius: 20,
-          border: "1px solid #9C9494"
+          boxShadow: 20
         }}
       >
         <div
           className="d-flex justify-content-between"
-          style={{ marginRight: 31, marginLeft: 31, marginTop: 25 }}
+          style={{ marginRight: 31, marginLeft: 31, marginTop: 25}}
         >
-          <p style={{ fontSize: 24, fontFamily: "arial" }}>
+          <p style={{ fontSize: "100%", fontFamily: "arial" }}>
             Coupe Garçon - 14 ans
           </p>
-          <p style={{ fontSize: 18, color: "#058BFB", fontFamily: "arial" }}>
+          <p style={{ fontSize: "100%", color: "#058BFB", fontFamily: "arial" }}>
             Supprimer&nbsp;
           </p>
         </div>
-        <div className="d-flex" style={{ marginRight: 0, marginLeft: 31 }}>
-          <p style={{ marginRight: 15, fontSize: 24, fontFamily: "arial" }}>
+        <div className="d-flex" style={{ marginRight: 0, marginLeft: 31, marginTop: -15 }}>
+          <p style={{ marginRight: 15, fontSize: "100%", fontFamily: "arial" }}>
             30 min
           </p>
           <img
             src="assets/img/Image%20(10).png"
-            style={{ width: 7, height: 7, marginTop: 16 }}
+            style={{ width: 7, height: 7, marginTop: 10 }}
           />
-          <p style={{ marginLeft: 15, fontSize: 24, fontFamily: "arial" }}>
+          <p style={{ marginLeft: 15, fontSize: "100%", fontFamily: "arial" }}>
             8000 XAF
           </p>
         </div>
         <p
           style={{
             marginLeft: 31,
-            fontSize: 24,
+            fontSize: 16,
             fontFamily: "arial",
             fontWeight: "bold",
-            marginTop: 23
+            marginTop: 2
           }}
         >
           Avec qui ?
         </p>
         <div className="container" style={{ marginLeft: 23, marginBottom: 25 }}>
-          <div className="row">
-            <div
-              className="col-md-4"
-              style={{
-                borderRadius: 20,
-                border: "1px solid #9C9494",
-                width: 150,
-                marginRight: 20,
-                height: 150
-              }}
-            >
-              <input
-                type="radio"
-                style={{ width: 25, height: 25, marginTop: 6, marginRight: 0 }}
-              />
-              <div
-                style={{
-                  background: "#000000",
-                  width: 90,
-                  height: 90,
-                  borderRadius: 90,
-                  marginLeft: 17,
-                  marginTop: "-13px"
-                }}
-              >
-                <p
-                  style={{
-                    textAlign: "center",
-                    paddingTop: 0,
-                    color: "rgb(255,255,255)",
-                    fontSize: 50,
-                    marginBottom: 0,
-                    marginTop: 0
-                  }}
-                >
-                  S
-                </p>
+          <div className="row1">
+            <div className="col-md-4 d-flex justify-content-between align-items-center with">
+              <div className="d-flex align-items-center">
+                  <span style={{fontWeight: 400}}>Sans préférence</span>
               </div>
-              <p
-                style={{
-                  textAlign: "center",
-                  marginTop: "-4px",
-                  fontSize: 25,
-                  fontWeight: "bold",
-                  fontFamily: "arial"
-                }}
-              >
-                Samuel
-              </p>
+              <input type="radio" className="radio" />
             </div>
-            <div
-              className="col-md-4"
-              style={{
-                borderRadius: 20,
-                border: "1px solid #9C9494",
-                width: 150,
-                marginRight: 20,
-                height: 150
-              }}
-            >
-              <input
-                type="radio"
-                style={{ width: 25, height: 25, marginTop: 6, marginRight: 0 }}
-              />
-              <div
-                style={{
-                  background: "#000000",
-                  width: 90,
-                  height: 90,
-                  borderRadius: 90,
-                  marginLeft: 17,
-                  marginTop: "-13px"
-                }}
-              >
-                <p
-                  style={{
-                    textAlign: "center",
-                    paddingTop: 0,
-                    color: "rgb(255,255,255)",
-                    fontSize: 50,
-                    marginBottom: 0,
-                    marginTop: 0
-                  }}
-                >
-                  S
-                </p>
+
+            <div className="col-md-4 d-flex justify-content-between align-items-center with">
+              <div className="d-flex align-items-center">
+                <div className="id">
+                  <span className="id_text">S</span>
+                </div>
+                  <span style={{fontWeight: 400}}>Samuel</span>
               </div>
-              <p
-                style={{
-                  textAlign: "center",
-                  marginTop: "-4px",
-                  fontSize: 25,
-                  fontWeight: "bold",
-                  fontFamily: "arial"
-                }}
-              >
-                Samuel
-              </p>
+              <input type="radio" className="radio" />
             </div>
-            <div
-              className="col-md-4"
-              style={{
-                borderRadius: 20,
-                border: "1px solid #9C9494",
-                width: 150,
-                marginRight: 20,
-                height: 150
-              }}
-            >
-              <input
-                type="radio"
-                style={{ width: 25, height: 25, marginTop: 6, marginRight: 0 }}
-              />
-              <div
-                style={{
-                  background: "#000000",
-                  width: 90,
-                  height: 90,
-                  borderRadius: 90,
-                  marginLeft: 17,
-                  marginTop: "-13px"
-                }}
-              >
-                <p
-                  style={{
-                    textAlign: "center",
-                    paddingTop: 0,
-                    color: "rgb(255,255,255)",
-                    fontSize: 50,
-                    marginBottom: 0,
-                    marginTop: 0
-                  }}
-                >
-                  S
-                </p>
+
+            <div className="col-md-4 d-flex justify-content-between align-items-center with">
+              <div className="d-flex align-items-center">
+                <div className="id">
+                  <span className="id_text">S</span>
+                </div>
+                  <span style={{fontWeight: 400}}>Samuel</span>
               </div>
-              <p
-                style={{
-                  textAlign: "center",
-                  marginTop: "-4px",
-                  fontSize: 25,
-                  fontWeight: "bold",
-                  fontFamily: "arial"
-                }}
-              >
-                Samuel
-              </p>
+              <input type="radio" className="radio" />
             </div>
-            <div
-              className="col-md-4"
-              style={{
-                borderRadius: 20,
-                border: "1px solid #9C9494",
-                width: 150,
-                marginRight: 40,
-                height: 150
-              }}
-            >
-              <input
-                type="radio"
-                style={{ width: 25, height: 25, marginTop: 6, marginRight: 0 }}
-              />
-              <div
-                style={{
-                  background: "#000000",
-                  width: 90,
-                  height: 90,
-                  borderRadius: 90,
-                  marginLeft: 17,
-                  marginTop: "-13px"
-                }}
-              >
-                <p
-                  style={{
-                    textAlign: "center",
-                    paddingTop: 0,
-                    color: "rgb(255,255,255)",
-                    fontSize: 50,
-                    marginBottom: 0,
-                    marginTop: 0
-                  }}
-                >
-                  S
-                </p>
+
+            <div className="col-md-4 d-flex justify-content-between align-items-center with">
+              <div className="d-flex align-items-center">
+                <div className="id">
+                  <span className="id_text">S</span>
+                </div>
+                  <span style={{fontWeight: 400}}>Samuel</span>
               </div>
-              <p
-                style={{
-                  textAlign: "center",
-                  marginTop: "-4px",
-                  fontSize: 25,
-                  fontWeight: "bold",
-                  fontFamily: "arial"
-                }}
-              >
-                Samuel
-              </p>
+              <input type="radio" className="radio" />
             </div>
+            
           </div>
         </div>
+        <select className="select"> {/* Hide on screens larger than mobile */}
+          <option value="">Avec qui</option>
+          <option value="preference">Sans préférence</option>
+          <option value="preference">Samuel</option>
+          <option value="preference">Samuel</option>
+          <option value="preference">Samuel</option>
+          {/* Add other options as needed */}
+        </select>
       </div>
       <button
         className="btn btn-primary"
         type="button"
         style={{
-          marginTop: 28,
+          marginTop: 10,
           background: "#000000",
           color: "rgb(254,252,252)",
-          fontSize: 24,
+          border: "none",
+          fontSize: 16,
           fontFamily: "arial",
-          width: "100%"
+          width: "30%"
         }}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
+          width="0.5"
+          height="0.5"
           fill="currentColor"
           viewBox="0 0 16 16"
           className="bi bi-plus-circle"
           style={{
-            width: 36,
+            width: 20,
             borderRadius: 90,
-            height: 36,
+            height: 20,
             marginRight: 7,
             background: "#fcfcfc",
             color: "rgb(7,7,7)"
@@ -366,7 +217,7 @@ const ConfigurationDuPaiement = () => {
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
           <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
         </svg>
-        Ajouter une prestation à la suite
+        <span className="buttext">Ajouter une prestation à la suite</span>
       </button>
     </div>
     <div style={{ marginRight: 40 }}>
@@ -375,64 +226,98 @@ const ConfigurationDuPaiement = () => {
           fontWeight: "bold",
           fontFamily: "arial",
           fontSize: 20,
-          color: "rgb(1,1,1)"
+          color: "rgb(1,1,1)",
+          marginTop: 20
         }}
       >
         2. Choix de la Date et l'heure&nbsp;
       </p>
-      <div className="d-flex justify-content-start" style={{ marginTop: 70 }}>
-        <p style={{ fontSize: 15, fontWeight: "bold", marginTop: 1 }}>
-          Date :&nbsp;
-        </p>
-        <input
-          type="date"
-          style={{
-            fontSize: 20,
-            textAlign: "center",
-            marginLeft: 20,
-            width: 200,
-            height: 30,
-            borderRadius: 20,
-            borderWidth: 1
-          }}
-        />
+      <div className="heure-box">
+        <table>
+          <tr>
+            <th>Lundi</th>
+            <td onclick={onReserve}>17:00</td>
+            <td onclick={onReserve}>17:00</td>
+            <td onclick={onReserve}>17:00</td>
+            <td onclick={onReserve}>17:00</td>
+            <td onclick={onReserve}>17:00</td>
+            <td onclick={onReserve}>17:00</td>
+          </tr>
+          <tr>
+            <th>Mardi</th>
+            <td>18:00</td>
+            <td>12:00</td>
+            <td>17:00</td>
+            <td>17:00</td>
+            <td>17:00</td>
+            <td>17:00</td>
+          </tr>
+          <tr>
+            <th>Mercredi</th>
+            <td>18:00</td>
+            <td>13:00</td>
+          </tr>
+          <tr>
+            <th>Jeudi</th>
+            <td>13:00</td>
+            <td>15:00</td>
+            <td>17:00</td>
+            <td>12:00</td>
+            <td>12:00</td>
+          </tr>
+          <tr>
+            <th>Vendredi</th>
+            <td>18:00</td>
+            <td>12:00</td>
+            <td>17:00</td>
+            <td>17:00</td>
+            <td>17:00</td>
+            <td>17:00</td>
+          </tr>
+          <tr>
+            <th>Samedi</th>
+            <td>18:00</td>
+            <td>12:00</td>
+          </tr>
+          <tr>
+            <th>Dimanche</th>
+            <td>18:00</td>
+            <td>12:00</td>
+          </tr>
+        </table>
+        <div className="select" >
+          <div className="d-flex">
+            Date :
+            <input type="date" className="heure-data" />
+          </div>
+          <br/>
+          <div className="d-flex">
+            Heure :   
+            <select className="heure-data"> {/* Hide on screens larger than mobile */}
+              <option value="">Choisir une heure</option>
+              <option value="preference">12h</option>
+              <option value="preference">15h</option>
+              <option value="preference">17h</option>
+              <option value="preference">19h</option>
+              {/* Add other options as needed */}
+            </select>
+            <button style={{
+              marginTop: 10,
+              background: "#000000",
+              color: "rgb(254,252,252)",
+              border: "none",
+              fontSize: 16,
+              fontFamily: "arial",
+              width: "30%"
+              }} 
+              className="" onclick={onReserve}>Payer</button>
+          </div>
+        </div>
       </div>
-      <div className="d-flex justify-content-start" style={{ marginTop: 30 }}>
-        <p
-          className="justify-content-between"
-          style={{
-            fontWeight: "bold",
-            fontSize: 15,
-            marginRight: 8,
-            marginTop: 2
-          }}
-        >
-          Heure :&nbsp;
-        </p>
-        <select
-          style={{
-            width: 200,
-            fontSize: 20,
-            textAlign: "center",
-            height: 30,
-            borderRadius: 20
-          }}
-        >
-          <optgroup label="Choisir une date">
-            <option value={12} selected="">
-              11 : 30
-            </option>
-            <option value={13}>12 : 00</option>
-            <option value="">12 : 30</option>
-            <option value="">13 : 00</option>
-          </optgroup>
-        </select>
-      </div>
-      <button onClick={onReserve}>Reserver Maintenenant</button>
     </div>
   </div>
   <Footer />
-</>
+</div>
 
   );
 };

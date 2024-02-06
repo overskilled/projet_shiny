@@ -4,6 +4,7 @@ import Header from "../components/Header";
 // import SearchBarContainer from "../components/SearchBarContainer";
 import Footer from "../components/Footer";
 // import Service from "../components/Service";
+import Navbar from "../components/Navbar/Navbar";
 
 
 const RservationServices = () => {
@@ -15,8 +16,8 @@ const RservationServices = () => {
 
   return (
     <>
-    <Header />
-    <div className="container">
+    <Navbar />
+    <div className="container" style={{marginTop: 100}}>
   <div className="row justify-content-between my-5">
     <div className="col-auto">
       <h1>Shiny</h1>

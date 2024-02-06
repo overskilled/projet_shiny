@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 // import SearchBarContainer from "../components/SearchBarContainer";
 import Footer from "../components/Footer";
 // import Service from "../components/Service";
@@ -14,7 +14,7 @@ const RservationServices = () => {
 
   return (
     <>
-    <Header />
+    <Navbar />
     <div className="container">
   <div className="row my-5">
     <div className="col text-center mx-auto">

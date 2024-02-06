@@ -2,31 +2,11 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 // import Products from "../components/Products";
-import Header from "../components/Header";
 import Navbar from "../components/Navbar/Navbar";
+import "../assets1/accueil.css"
 
 const Acceuil = () => {
   const navigate = useNavigate();
-
-  const onNosServicesTextClick = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onBoutonConnexionContainerClick = useCallback(() => {
-    navigate("/desktop-10");
-  }, [navigate]);
-
-  const onBoutonAjouterTablissementClick = useCallback(() => {
-    navigate("/professinel-choice");
-  }, [navigate]);
-
-  const onButtonContainer1Click = useCallback(() => {
-    navigate("/rservation-services");
-  }, [navigate]);
-
-  const onButtonContainer2Click = useCallback(() => {
-    navigate("/choix-service");
-  }, [navigate]);
 
   const onSearch = useCallback(() => {
     navigate("/reservation-services");
@@ -35,12 +15,13 @@ const Acceuil = () => {
   return (
     <>
     <Navbar />
-  <section className="py-4 py-xl-5" style={{ background: "var(--bs-success)" }}>
+  <section className="py-4 py-xl-5" style={{ background: "var(--bs-success)"}}>
     <div className="container d-flex justify-content-between">
       <div style={{ paddingTop: 70, width: 700 }}>
-        <div className="d-flex align-items-center justify-content-xxl-start">
+        <div className="d-flex align-items-center justify-content-xxl-start welcome">
           <p
-            className="fw-bold d-xxl-flex align-items-xxl-end"
+            
+            className="fw-bold d-xxl-flex align-items-xxl-end none"
             style={{ fontSize: 50, fontFamily: "arial", maxWidth: "293.594px" }}
           >
             Welcome to&nbsp;
@@ -57,36 +38,33 @@ const Acceuil = () => {
             Shiny
           </p>
         </div>
-        <p style={{ fontSize: 34, fontWeight: "bold", fontFamily: "arial" }}>
+        <p className="none" style={{ fontSize: 34, fontWeight: "bold", fontFamily: "arial" }}>
           Beauty care at hand.
         </p>
         <p 
+        className="book-a"
           style={{
             fontWeight: "bold",
             fontSize: 35,
             color: "#FF9090",
-            paddingTop: 90
           }}
         >
           Book a ...
         </p>
       </div>
-      <div>
-        <img
+      <div className="none">
+        <img 
+          className="none"
           src="assets/img/Photo%20de%20présentation.png"
           style={{ width: 470 }}
         />
       </div>
     </div>
     <div
-      className="d-flex justify-content-around align-items-center"
+      className="d-flex justify-content-around align-items-center search"
       style={{
-        width: 750,
-        paddingLeft: 0,
-        marginLeft: 113,
         background: "#FFFEFE",
-        height: 70,
-        borderRadius: 30
+        borderRadius: 15
       }}
     >
       <input
@@ -109,7 +87,7 @@ const Acceuil = () => {
         placeholder="Spécialiste, Institute ..."
       />
       <input
-        className="placeholder form-control-lg"
+        className="none"
         type="text"
         style={{
           background: "#E9E9E9",
@@ -121,7 +99,9 @@ const Acceuil = () => {
           borderBottomWidth: 0,
           borderBottomColor: "#E9E9E9",
           borderLeftStyle: "none",
-          borderLeftColor: "var(--bs-black)"
+          borderLeftColor: "var(--bs-black)",
+          color: "#302B2B",
+          fontSize: 16
         }}
         placeholder="Location"
       />
@@ -129,13 +109,14 @@ const Acceuil = () => {
     </div>
   </section>
   <div className="container" style={{ width: "75%", marginTop: 20 }}>
-    <img src="assets/img/Image%20(10).png" style={{ marginLeft: 853 }} />
+    <img className="none" src="assets/img/Image%20(10).png" style={{ marginLeft: 853 }} />
     <p 
       style={{
-        fontSize: 48,
+        fontSize: "200%",
         color: "#3A2D32",
         textAlign: "center",
-        marginTop: "-70px"
+        marginTop: "-70px",
+        width: "90%"
       }}
     >
       <br />
@@ -146,29 +127,26 @@ const Acceuil = () => {
       <br />
     </p>
     <img
+    className="none"
       src="assets/img/Image%20(10).png"
       style={{ marginTop: "-80px", marginLeft: 237 }}
     />
   </div>
   <div
-    className="container d-flex justify-content-between"
+    className="container introd"
     style={{ width: "83%" }}
   >
     <div>
       <img
-        src="assets/img/Ellipse%201.png"
-        style={{ marginTop: "-319px", marginLeft: "-112px" }}
-      />
-      <img
         src="assets/img/Image.png"
-        style={{ marginTop: 35, marginLeft: "-251px" }}
+        style={{ marginTop: 35, width: "100%"}}
       />
-      <div style={{ width: 478, marginBottom: 76 }}>
+      <div style={{ width: "100%", marginBottom: 76 }}>
         <p
           style={{
             marginTop: 40,
             color: "#221E42",
-            fontSize: 48,
+            fontSize: "250%",
             fontWeight: "bold",
             fontFamily: "Playfair Display"
           }}
@@ -178,7 +156,7 @@ const Acceuil = () => {
         <p
           style={{
             color: "#FF9090",
-            fontSize: 40,
+            fontSize: "230%",
             fontFamily: "Playfair Display",
             fontWeight: "bold",
             marginTop: "-9px"
@@ -188,11 +166,12 @@ const Acceuil = () => {
         </p>
         <p
           style={{
-            fontSize: 20,
+            fontSize: "120%",
             color: "#565656",
             fontFamily: "Playfair Display",
             fontWeight: "bold",
-            marginTop: "-12px"
+            marginTop: "-12px",
+            width: "90%"
           }}
         >
           Indulge in blissful relaxation with our rejuvenating massages. Escape
@@ -216,15 +195,15 @@ const Acceuil = () => {
         </button>
       </div>
     </div>
-    <div style={{ marginLeft: 103 }}>
-      <div className="d-flex">
+    <div className="right-introd">
+      <div className="d-flex ">
         <div>
           <p
             style={{
               color: "#FF9090",
-              fontSize: 52,
+              fontSize: "230%",
               fontFamily: "Playfair Display",
-              width: 475,
+              width: "80%",
               marginTop: 18
             }}
           >
@@ -232,7 +211,7 @@ const Acceuil = () => {
           </p>
           <p
             style={{
-              fontSize: 48,
+              fontSize: "250%",
               color: "#221E42",
               fontFamily: "Playfair Display",
               fontWeight: "bold",
@@ -241,14 +220,14 @@ const Acceuil = () => {
           >
             02
           </p>
-          <p style={{ color: "#FF9090", fontSize: 40, fontWeight: "bold" }}>
+          <p style={{ color: "#FF9090", fontSize: "230%", fontWeight: "bold" }}>
             Radiant Glow Await
           </p>
           <p
             style={{
               fontFamily: "Playfair Display",
               fontWeight: "bold",
-              fontSize: 20,
+              fontSize: "120%",
               color: "#565656"
             }}
           >
@@ -257,23 +236,17 @@ const Acceuil = () => {
             sanctuary of indulgence
           </p>
         </div>
-        <div>
-          <img
-            src="assets/img/Vector%20(4).png"
-            style={{ marginRight: "-13px" }}
-          />
-        </div>
       </div>
       <img
         src="assets/img/Image%20(1).png"
-        style={{ width: 570, height: 467 }}
+        style={{ width: "100%" }}
       />
     </div>
   </div>
   <div className="d-flex" style={{ height: 500 }}>
     <div
       className="d-flex flex-column justify-content-center"
-      style={{ width: 622, background: "#E8C59759" }}
+      style={{ width: "100%", background: "#E8C59759" }}
     >
       <div style={{ marginRight: 119, marginLeft: 119, marginTop: 71 }}>
         <p
@@ -285,7 +258,7 @@ const Acceuil = () => {
         >
           Quote Today
         </p>
-        <p style={{ fontSize: 25, fontFamily: "Playfair Display" }}>
+        <p style={{ fontSize: "12                                     0%", fontFamily: "Playfair Display", width: 200 }}>
           "Every time you create beauty around you, you restore your own soul.
           So be a great human from the inside and outside. "
         </p>
@@ -293,12 +266,14 @@ const Acceuil = () => {
           Alice Walker
         </p>
         <img
+        className="none"
           src="assets/img/Vector.png"
           style={{ width: 250, marginLeft: "-119px", marginTop: "-135px" }}
         />
       </div>
     </div>
     <div
+    className="video"
       style={{
         background: "url(assets/img/Image%20(2).png)",
         width: "60%",
@@ -306,6 +281,7 @@ const Acceuil = () => {
       }}
     >
       <img
+        className="none"
         src="assets/img/Icon.png"
         style={{ textAlign: "center", marginTop: 196 }}
       />
@@ -313,12 +289,12 @@ const Acceuil = () => {
   </div>
   <div className="container" style={{ width: "86%", marginTop: 87 }}>
     <div className="d-xl-flex d-xxl-flex" style={{ width: "initial" }}>
-      <div style={{ width: 531 }}>
+      <div style={{ width: "100%" }}>
         <p
           style={{
             color: "#FF9090",
             fontFamily: "Playfair Display",
-            fontSize: 50
+            fontSize: "270%"
           }}
         >
           Consult your problem&nbsp; with the experts
@@ -326,9 +302,9 @@ const Acceuil = () => {
         <p
           style={{
             color: "#565656",
-            fontSize: 18,
+            fontSize: "120%",
             fontFamily: "DM sans-serif",
-            width: 502,
+            width: "90%",
             lineHeight: "34.74px",
             letterSpacing: 1
           }}
@@ -357,13 +333,14 @@ const Acceuil = () => {
         </button>
       </div>
       <img
-        className="img-fluid visible"
+        className="img-fluid none"
         src="assets/img/Vector%201.png"
-        style={{ width: 355, height: 211, marginLeft: 150 }}
+        style={{ width: "355", height: 211, marginLeft: 150 }}
       />
     </div>
-    <div className="d-flex">
+    <div className="d-flex sliders">
       <img
+      className="none"
         src="assets/img/Vector%20(1).png"
         style={{
           width: 309,
@@ -373,9 +350,9 @@ const Acceuil = () => {
           marginRight: 170
         }}
       />
-      <img src="assets/img/Rectangle%2016.png" style={{ marginTop: "-96px" }} />
-      <div style={{ marginLeft: 64 }}>
-        <img src="assets/img/Image%20(3).png" style={{ marginTop: "-137px" }} />
+      <img src="assets/img/Rectangle%2016.png" className="first" style={{width: "100%", }} />
+      <div className="side-sliders">
+        <img  src="assets/img/Image%20(3).png" className="second" style={{width: "100%", }} />
         <div
           className="d-flex justify-content-between align-content-center"
           style={{ marginTop: 16 }}
@@ -422,7 +399,7 @@ const Acceuil = () => {
   <div className="d-flex flex-column align-items-center">
     <div className="container" style={{ width: "100%" }}>
       <div className="row">
-        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+        <div className="col-md-4 product" style={{ width: 350}}>
           <img src="assets/img/Image%20(4).png" style={{ width: 350 }} />
           <div className="d-flex justify-content-between">
             <p
@@ -499,7 +476,7 @@ const Acceuil = () => {
             </p>
           </div>
         </div>
-        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+        <div className="col-md-4 product" style={{ width: 350}}>
           <img src="assets/img/Image%20(5).png" style={{ width: 350 }} />
           <div className="d-flex justify-content-between">
             <p
@@ -642,7 +619,7 @@ const Acceuil = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+        <div className="col-md-4 product-none" style={{ width: 350}}>
           <img src="assets/img/Image%20(7).png" style={{ width: 350 }} />
           <div className="d-flex justify-content-between">
             <p
@@ -719,7 +696,7 @@ const Acceuil = () => {
             </p>
           </div>
         </div>
-        <div className="col-md-4" style={{ width: 350, marginRight: 40 }}>
+        <div className="col-md-4 product-none" style={{ width: 350}}>
           <img src="assets/img/Image%20(8).png" style={{ width: 350 }} />
           <div className="d-flex justify-content-between">
             <p
@@ -888,32 +865,32 @@ const Acceuil = () => {
     style={{ marginTop: 15 }}
   >
     <p
+    className="what-cust"
       style={{
         color: "#FF9090",
         fontFamily: "Playfair Display",
-        fontSize: 50,
-        width: 685,
+        width: "100%",
         textAlign: "left",
         fontWeight: "bold",
-        marginLeft: 163
       }}
     >
       What Customers says about our services and products
     </p>
-    <img src="assets/img/Vector%20(2).png" />
+    <img className="none" src="assets/img/Vector%20(2).png" />
   </div>
   <div>
     <div className="d-flex">
       <img
+      className="none"
         src="assets/img/Vector%20(3).png"
         style={{ height: 260, marginRight: "-49px", marginLeft: 0 }}
       />
       <div>
         <div
           className="d-flex justify-content-between"
-          style={{ width: 1198, background: "#FFEFD7", marginRight: 121 }}
+          style={{ width: "100%", background: "#FFEFD7", marginRight: 121 }}
         >
-          <div style={{ marginLeft: 120, marginTop: 56 }}>
+          <div className="customer-avis" style={{ marginTop: 56 }}>
             <p
               style={{
                 color: "#FE9986",
@@ -928,7 +905,7 @@ const Acceuil = () => {
               style={{
                 fontFamily: "Playfair Display",
                 fontSize: 20,
-                width: 461,
+                width: "100%",
                 lineHeight: "38.6px",
                 textAlign: "left",
                 paddingRight: 90
@@ -949,11 +926,11 @@ const Acceuil = () => {
               Mirabelle Claudine
             </p>
           </div>
-          <img src="assets/img/Rectangle%2026.png" />
+          <img className="side-avis" src="assets/img/Rectangle%2026.png" />
         </div>
         <div
           className="d-flex justify-content-between align-items-center"
-          style={{ width: 1198, marginTop: 20 }}
+          style={{ width: "90%", marginTop: 20 }}
         >
           <img
             className="d-flex justify-content-between"
@@ -964,10 +941,11 @@ const Acceuil = () => {
           />
           <div>
             <img
+            className="swipe"
               src="assets/img/arrow-right%20(1).png"
-              style={{ marginRight: 16 }}
+              style={{ marginRight: 16}}
             />
-            <img src="assets/img/arrow-right.png" />
+            <img className="swipe" src="assets/img/arrow-right.png" />
           </div>
         </div>
       </div>
