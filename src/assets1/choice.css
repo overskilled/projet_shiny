@@ -1,3 +1,27 @@
+.choice {
+    background: url("./img/choice.jpg") no-repeat center center fixed; 
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: none;
+}
+
+.wrapper2 {
+    background: url("./img/institute2.jpg") no-repeat center center fixed; 
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: none;
+}
+
+
+.row {}
+
+
 .cards {
     width: 100%;
     display: flex;
@@ -69,9 +93,7 @@
     box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 
     @media screen and (max-width: 768px) {
-        .card.card--1 {
-            
-        }
+        .card.card--1 {}
     }
 }
 
@@ -149,6 +171,5 @@ article:hover {
 
 
 @media (max-width: 768px) {
-    .card.card--1.card--2 {
-    }
+    .card.card--1.card--2 {}
 }

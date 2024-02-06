@@ -15,7 +15,7 @@ const Choice = () => {
   }, [navigate]);
 
   return (
-    <>
+    <div className="choice">
       <div className="container d-flex justify-content-center align-items-center vh-100">
         <div className="graphic">
         <div className="graphic">
@@ -58,7 +58,7 @@ const Choice = () => {
 
         </section>
       </div>
-    </>
+    </div>
   );
 };
 

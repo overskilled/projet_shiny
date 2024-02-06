@@ -23,6 +23,8 @@ import Card from "./pages/Card";
 import CustomerSignUp from "./pages/CustomerSignUp";
 import Choice from "./pages/Choices"; 
 
+import "./App.css";
+
 function App() {
   // const action = useNavigationType();
   // const location = useLocation();
