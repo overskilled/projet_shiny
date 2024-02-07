@@ -392,7 +392,7 @@ ul li {
     }
 }   
 
-.company .none {
+.nones {
     display: flex;
     @media screen and (max-width: 768px) {
         display: none;
@@ -432,7 +432,7 @@ ul li {
     }
 }
 
-.heure-box {
+.heureBox {
     background-color: white;
     width: 95%;
     height: 500px;

@@ -11,7 +11,7 @@
     }
 }   
 
-.company .none {
+.nones {
     display: flex;
     @media screen and (max-width: 768px) {
         display: none;
@@ -51,7 +51,7 @@
     }
 }
 
-.heure-box {
+.heureBox {
     background-color: white;
     width: 95%;
     height: 500px;
@@ -76,6 +76,12 @@
 
 .row1{
     display: flex;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.container {
     @media screen and (max-width: 768px) {
         display: none;
     }

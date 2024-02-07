@@ -14,7 +14,7 @@ const ConfigurationDuPaiement = () => {
 
 
   return (
-    <div className="config">
+    <div className="w-100 config">
       <Navbar />
       <div className="company " style={{ paddingTop: 100 }}>
         <p
@@ -29,7 +29,7 @@ const ConfigurationDuPaiement = () => {
         >
           Shiny Coiffure
         </p>
-        <div className="none" style={{ marginTop: "-13px" }}>
+        <div className="nones" style={{ marginTop: "-13px" }}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
@@ -231,7 +231,7 @@ const ConfigurationDuPaiement = () => {
           >
             2. Choix de la Date et l'heure&nbsp;
           </p>
-          <div className="heure-box">
+          <div className="heureBox">
             <table className="table1">
               <tr className="tr">
                 <th className="th">Lundi</th>
