@@ -16,7 +16,7 @@ const Acceuil = () => {
   return (
     <>
     <Navbar />
-  <section className="w-100" style={{ background: "#FADCDC", marginTop: 80}}>
+  <section className="py-4 py-xl-5" style={{ background: "#FADCDC", marginTop: 80}}>
     <div className="container d-flex justify-content-between">
       <div style={{ paddingTop: 70, width: 700 }}>
         <div className="d-flex align-items-center justify-content-xxl-start welcome">
