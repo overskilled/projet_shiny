@@ -8,14 +8,14 @@ import "../assets1/accueil.css"
 const Acceuil = () => {
   const navigate = useNavigate();
 
-  const onSearch = useCallback(() => {
+  const onSearch = () => {
     navigate("/reservation-services");
-  }, [navigate]);
+  }
 
   return (
     <>
     <Navbar />
-  <section className="py-4 py-xl-5" style={{ background: "var(--bs-success)"}}>
+  <section className="py-4 py-xl-5" style={{ background: "#FADCDC", marginTop: 80}}>
     <div className="container d-flex justify-content-between">
       <div style={{ paddingTop: 70, width: 700 }}>
         <div className="d-flex align-items-center justify-content-xxl-start welcome">
@@ -27,7 +27,7 @@ const Acceuil = () => {
             Welcome to&nbsp;
           </p>
           <p
-            className="d-xxl-flex align-items-xxl-end"
+            className="d-xxl-flex align-items-xxl-end none"
             style={{
               color: "#F07777",
               fontSize: 70,
@@ -38,7 +38,7 @@ const Acceuil = () => {
             Shiny
           </p>
         </div>
-        <p className="none" style={{ fontSize: 34, fontWeight: "bold", fontFamily: "arial" }}>
+        <p className="banner-text" style={{ fontSize: 34, fontWeight: "bold", fontFamily: "arial" }}>
           Beauty care at hand.
         </p>
         <p 
@@ -178,6 +178,7 @@ const Acceuil = () => {
           the stress, unwind, and let our skilled therapists soothe your sense
         </p>
         <button
+          onClick={onSearch}
           className="btn btn-primary"
           type="button"
           style={{
@@ -396,7 +397,7 @@ const Acceuil = () => {
   >
     Various Shiny Products
   </p>
-  <div className="d-flex flex-column align-items-center">
+  <div className="d-flex flex-column align-items-center" style={{marginLeft: 50}}>
     <div className="container" style={{ width: "100%" }}>
       <div className="row">
         <div className="col-md-4 product" style={{ width: 350}}>

@@ -3,11 +3,17 @@ import { useNavigate } from "react-router-dom";
 import "../assets1/footer.css"
 
 const Footer = () => {
-//   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-//   const onNosServicesTextClick = useCallback(() => {
-//     navigate("/rservation-services");
-//   }, [navigate]);
+  const Home = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+  const service = useCallback(() => {
+    navigate("/reservation-services");
+  }, [navigate]);
+  const card = useCallback(() => {
+    navigate("/card");
+  }, [navigate]);
 
 //   const onBoutonConnexionContainerClick = useCallback(() => {
 //     navigate("/desktop-10");
@@ -49,7 +55,7 @@ const Footer = () => {
           marginRight: 144
         }}
       >
-        <img src="assets/img/Shiny%20Logo.png" />
+        <img onClick={Home} src="assets/img/Shiny%20Logo.png" />
         <p
           style={{
             fontFamily: "DM Sans",
@@ -103,25 +109,25 @@ const Footer = () => {
         }}
       >
         <div >
-          <p style={{ color: "white" }}>Menu</p>
-          <p>Home</p>
+          <p onClick={Home} style={{ color: "white" }}>Menu</p>
+          <p onClick={Home}>Home</p>
           <p>Consultant</p>
-          <p>Product</p>
-          <p>Shop</p>
-          <p>About Us</p>
+          <p onClick={service}>Product</p>
+          <p onClick={service}>Shop</p>
+          <p onClick={service}>About Us</p>
         </div>
         <div>
           <p style={{ color: "white" }}>Product</p>
-          <p>Skincare</p>
-          <p>Handbody</p>
-          <p>Oil</p>
-          <p>FashWash</p>
+          <p onClick={service}>Skincare</p>
+          <p onClick={service}>Handbody</p>
+          <p onClick={service}>Oil</p>
+          <p onClick={service}>FashWash</p>
         </div>
         <div>
           <p style={{ color: "white" }}>Service</p>
-          <p>order</p>
-          <p>Booked</p>
-          <p>Payment</p>
+          <p onClick={service}>order</p>
+          <p onClick={service}>Booked</p>
+          <p onClick={card}>Payment</p>
           <p>Delivery</p>
         </div>
         <div>

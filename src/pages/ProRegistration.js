@@ -58,7 +58,7 @@ const ProRegistration = () => {
 
         <div className="row d-flex justify-content-between">
           <div className="col-lg-7 left-side-pro d-flex flex-column justify-content-center align-items-center vh-100 vh-100-mobile my-5">
-            <div className="card w-70 d-flex align-items-center justify-content-center form-container shadow p-4 mb-5 bg-white rounded">
+            <div className="card w-70 d-flex align-items-center justify-content-center form-container shadow p-4 mb-5 bg-white rounded" style={{marginTop: 100}}>
               <p className="text-center mt-5" style={{ fontWeight: "bold" }}>
                 Vous êtes gérant d’un établissement beauté ? <br />
                 Un de nos experts vous recontacte

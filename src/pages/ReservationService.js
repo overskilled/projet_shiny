@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 // import SearchBarContainer from "../components/SearchBarContainer";
+import "../assets1/Reservation.module.css";
 import Footer from "../components/Footer";
 // import Service from "../components/Service";
 
@@ -15,7 +16,7 @@ const RservationServices = () => {
   return (
     <>
     <Navbar />
-    <div className="container">
+    <div className="container" style={{marginTop: 100}}>
   <div className="row my-5">
     <div className="col text-center mx-auto">
       <h1>Nos services</h1>
@@ -27,7 +28,7 @@ const RservationServices = () => {
       <div id="new-projects" />
     </div>
   </div>
-  <button className="btn4 shadow-lg p-3  bg-body ">
+  <button className="btn btnfilter shadow-lg p-2  bg-body ">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={16}
@@ -44,6 +45,7 @@ const RservationServices = () => {
       width={16}
       height={16}
       fill="currentColor"
+      
       className="bi bi-arrow-down-short"
       viewBox="0 0 16 16"
     >

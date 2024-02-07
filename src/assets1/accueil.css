@@ -4,6 +4,14 @@
 	}
 }
 
+.banner-text {
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: larger;
+        color: #F07777;
+    }
+}
+
 .introd {
     display: flex;
     justify-content: space-between;
@@ -98,7 +106,7 @@
     margin-left: 113px;
     height: 70px;
     @media screen and (max-width: 768px) {
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
         height: 50px;

@@ -18,7 +18,7 @@ const CustomerSignUp = () => {
 
           <div className="col-lg-6 left-side d-none d-lg-block"></div>
 
-          <div className="col right-side d-flex flex-column  vh-100 vh-100-mobile justify-content-center">
+          <div className="col right-side d-flex flex-column  vh-100 vh-100-mobile justify-content-center" style={{marginTop: 90}}>
             <div className="card form-container shadow p-3 mb-5 bg-white rounded">
 
               <p className="text-center justify-content-center" style={{ fontSize: 20 }}>

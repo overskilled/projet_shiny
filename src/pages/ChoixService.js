@@ -4,8 +4,8 @@ import Header from "../components/Header";
 // import SearchBarContainer from "../components/SearchBarContainer";
 import Footer from "../components/Footer";
 import "../assets1/choice.css";
-// import Service from "../components/Service";
 import Navbar from "../components/Navbar/Navbar";
+// import Service from "../components/Service";
 
 
 const RservationServices = () => {
@@ -18,7 +18,7 @@ const RservationServices = () => {
   return (
     <div className="">
       <Navbar />
-      <div className="container">
+      <div className="container" style={{marginTop: 100}}>
         <div className="row justify-content-between my-5">
           <div className="col-auto">
             <h1>Shiny</h1>
@@ -62,7 +62,7 @@ const RservationServices = () => {
               <img className="card-img w-100 d-block" src="Drip 1.jpg" alt="drip" />
             </div>
           </div>
-          <div className="col-lg-6 d-flex">
+          <div className="col-lg-6 testfile">
             <div className="row align-items-stretch">
               <div className="col-md-6">
                 <div className="card h-100">
@@ -91,7 +91,7 @@ const RservationServices = () => {
                   />
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 ">
                 <div className="card h-100">
                   <img
                     className="card-img w-100 d-block"

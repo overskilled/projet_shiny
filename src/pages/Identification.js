@@ -24,7 +24,7 @@ const Identification = () => {
   return (
     <>
     <Navbar />
-    <div className="container" style={{ padding: "5% 10%" }}>
+    <div className="container" style={{ padding: "5% 10%", marginTop: 50 }}>
   <h5>Shinny Coiffure</h5>
   <div>
     <div style={{ display: "flex", alignItems: "center" }}>

@@ -56,8 +56,8 @@ const CustomerLogin = () => {
           
           <div className="col-lg-6 d-flex d-none d-lg-block left-side"> </div>
 
-          <div className="col d-flex flex-column  vh-100 vh-100-mobile justify-content-center">
-            <div className="card form-container shadow p-3 mb-5 bg-white rounded">
+          <div className="col d-flex flex-column  vh-100 vh-100-mobile justify-content-center" >
+            <div className="card form-container shadow p-3 mb-5 bg-white rounded" style={{marginTop: 180}}>
 
               <h3 className="text-center">Vous avez déjà utilisez <span style={{ color: "pink" }}>Shiny</span>?</h3>
               <br />
