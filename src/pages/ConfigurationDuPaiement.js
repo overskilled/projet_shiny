@@ -1,10 +1,24 @@
-import { useCallback } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
 import "../assets1/cdp.css"
 
 const ConfigurationDuPaiement = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const navigate = useNavigate();
 
   const onReserve = useCallback(() => {
@@ -232,6 +246,7 @@ const ConfigurationDuPaiement = () => {
             2. Choix de la Date et l'heure&nbsp;
           </p>
           <div className="heure-box">
+            {windowWidth >= 800 && (
             <table className="table1">
               <tr className="tr">
                 <th className="th">Lundi</th>
@@ -284,6 +299,7 @@ const ConfigurationDuPaiement = () => {
                 <td className="td">12:00</td>
               </tr>
             </table>
+              )}
             <div className="select" style={{marginTop: 20}}>
               <div className="d-flex align-items-center" style={{width: "90%"}}>
                 Date :
