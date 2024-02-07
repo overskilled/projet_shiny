@@ -136,7 +136,7 @@ const ConfigurationDuPaiement = () => {
             >
               Avec qui ?
             </p>
-            <div className="container" style={{ marginLeft: 23, marginBottom: 25 }}>
+            <div className="containers" style={{ marginLeft: 23, marginBottom: 25 }}>
               <div className="row1">
                 <div className="d-flex justify-content-between align-items-center with">
                   <div className="d-flex align-items-center" style={{marginLeft: 10}}>
@@ -231,7 +231,7 @@ const ConfigurationDuPaiement = () => {
           >
             2. Choix de la Date et l'heure&nbsp;
           </p>
-          <div className="heureBox">
+          <div className="heure-box">
             <table className="table1">
               <tr className="tr">
                 <th className="th">Lundi</th>
