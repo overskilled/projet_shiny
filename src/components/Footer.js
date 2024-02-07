@@ -7,12 +7,15 @@ const Footer = () => {
 
   const Home = useCallback(() => {
     navigate("/");
+    window.scrollTo(0, 0);
   }, [navigate]);
   const service = useCallback(() => {
     navigate("/reservation-services");
+    window.scrollTo(0, 0);
   }, [navigate]);
   const card = useCallback(() => {
     navigate("/card");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
 //   const onBoutonConnexionContainerClick = useCallback(() => {

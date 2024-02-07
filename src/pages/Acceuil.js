@@ -8,9 +8,10 @@ import "../assets1/accueil.css"
 const Acceuil = () => {
   const navigate = useNavigate();
 
-  const onSearch = () => {
+  const onSearch = useCallback(( ) => {
     navigate("/reservation-services");
-  }
+    window.scrollTo(0, 0);
+  }, [navigate]) 
 
   return (
     <>

@@ -7,18 +7,22 @@ const Identification = () => {
   const navigate = useNavigate();
   const onLogin = useCallback(() => {
     navigate("/login");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   const onSignUp = useCallback(() => {
     navigate("/customer-registration");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   const onModifier = useCallback(() => {
     navigate("/configuration-du-paiement");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   const onSup = useCallback(() => {
     navigate("/choix-service");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   return (

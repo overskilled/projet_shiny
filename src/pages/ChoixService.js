@@ -13,6 +13,7 @@ const RservationServices = () => {
 
   const onSelect = useCallback(() => {
     navigate("/configuration-du-paiement");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   return (

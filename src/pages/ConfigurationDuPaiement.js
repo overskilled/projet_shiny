@@ -7,9 +7,9 @@ import "../assets1/cdp.css"
 const ConfigurationDuPaiement = () => {
   const navigate = useNavigate();
 
-
   const onReserve = useCallback(() => {
     navigate("/paiement");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
 

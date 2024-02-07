@@ -21,18 +21,22 @@ const Navbar = () => {
 
 	const home = useCallback(() => {
 		navigate("/")
+		window.scrollTo(0, 0);
 	}, [navigate])
 
 	const service = useCallback(() => {
 		navigate("/reservation-services")
+		window.scrollTo(0, 0);
 	}, [navigate])
 
 	const login = useCallback(() => {
 		navigate("/login")
+		window.scrollTo(0, 0);
 	}, [navigate])
 
 	const choix = useCallback(() => {
 		navigate("/choice")
+		window.scrollTo(0, 0);
 	}, [navigate])
 
 

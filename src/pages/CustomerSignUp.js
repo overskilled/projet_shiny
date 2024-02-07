@@ -8,6 +8,7 @@ const CustomerSignUp = () => {
   const navigate = useNavigate();
   const signUp = useCallback(() => {
     navigate("/card");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   return (

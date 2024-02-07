@@ -8,10 +8,12 @@ const Choice = () => {
 
   const onPro = useCallback(() => {
     navigate("/professional-registration");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   const onInstitute = useCallback(() => {
     navigate("/institute-registration");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   return (

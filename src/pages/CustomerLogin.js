@@ -21,6 +21,7 @@ const CustomerLogin = () => {
 
   const onLogin = useCallback(() => {
     navigate("/card");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   const [values, setValues] = React.useState({

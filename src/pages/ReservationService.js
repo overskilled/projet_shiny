@@ -11,6 +11,7 @@ const RservationServices = () => {
   
   const onchoice = useCallback(() => {
     navigate("/choix-service");
+    window.scrollTo(0, 0);
   }, [navigate]);
 
   return (
